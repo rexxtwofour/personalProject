@@ -12,14 +12,14 @@ create table users (
     ,password text not null
 );
 
-
-create table events (
-    ,id serial primary key
-    ,event_name text not null
-    ,location text not null
-    ,datetime text not null
-    ,pickupanddrop location
-);
+-- Used for after personal project.
+-- create table events (
+--     ,id serial primary key
+--     ,event_name text not null
+--     ,location text not null
+--     ,datetime text not null
+--     ,pickupanddrop location
+--);
 
 
 create table posts (
