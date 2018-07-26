@@ -7,6 +7,7 @@ require('dotenv').config();
 const app = express();
 app.use(bodyParser.json());
 
+app.use( express.static( `${__dirname}/../build` ) );
 
 massive(process.env.CONNECTION_STRING).then(database => {
     console.log('connected to db')
@@ -15,34 +16,10 @@ massive(process.env.CONNECTION_STRING).then(database => {
     console.log('There was an error connecting to db', db);
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+})
 
 
 
