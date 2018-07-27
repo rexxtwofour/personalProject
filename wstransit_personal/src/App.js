@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios';
+import routes from './routes';
+import Header from './components/Header/Header';
+// import axios from 'axios';
 // import { Link } from 'react-router-dom'
-// import routes from './routes';
+
 
 
 
@@ -11,32 +13,60 @@ class App extends Component {
     return (
       <div className="App">
        <div className="App-header">
-       <div className="home">Home</div>
+       <Header/>
+      {routes()}
+      
+       
 
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-            <span class="caret custom-style"></span></button>
-            <ul class="dropdown-menu">
-            <li><a href="#">Create Account</a></li>
-            <li><a href="#">Create Event</a></li>
-            <li><a href="#">Events</a></li>
-          <li><a href="#">Event Reviews</a></li>
-            </ul>
-        </div>
+      </div>
+
+
+
+       <div className="body"></div>
+       <div className="titleName">West Side Transit</div>
+       <div className="westsidetransitelogo">logo</div>
+
+
 
 
 
        </div>
-      </div>
+
+        
+        
+        
+
+
+
+
+// <Link to="/" className='links'>Home</Link>
+// <Link to="/createaccount" className='links'>Create Account</Link> 
+// <Link to="/createevent" className='links'>Create Event</Link>
+// <Link to="/events" className='links'>Events</Link> 
+// <Link to="/selectedevent" className='links'>Selected Event</Link>
+// <Link to="/eventreviews" className='links'>Event Reviews</Link>   
+
+
+
+
+
+
+
     );
   }
 }
 
 export default App;
 
-          // <Link to="/" className='links'>Home</Link>
-          // <Link to="/createaccount" className='links'>Create Account</Link> 
-          // <Link to="/createevent" className='links'>Create Event</Link>
-          // <Link to="/events" className='links'>Events</Link> 
-          // <Link to="/selectedevent" className='links'>Selected Event</Link>
-          // <Link to="/eventreviews" className='links'>Event Reviews</Link>  
+
+
+        //   <div class="dropdown">
+        //     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        //     <span class="caret custom-style"></span></button>
+        //     <ul class="dropdown-menu">
+        //     <li><a href="createaccount">Create Account</a></li>
+        //     <li><a href="createevent">Create Event</a></li>
+        //     <li><a href="Events">Events</a></li>
+        //   <li><a href="eventre">Event Reviews</a></li>
+        //     </ul>
+        // </div>

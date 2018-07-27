@@ -1,15 +1,22 @@
-// import React from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 
 
 
 
+export default function Contact(){
+    return (
 
-// export default function Contact(){
-//     return (
-//         <div className ="contact">
-//             <h1>Contact</h1>
-            
-//         </div>
-//     )
-// }
+
+        <div className ="contact">
+           <div>Contact</div>
+           
+        </div>
+    )
+}
+
+
+
+

@@ -1,4 +1,6 @@
-// import React from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 
 
@@ -7,31 +9,35 @@
 
 
 
-// class CreateEvent extends Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {  }
-//     }
-//     render() { 
-//         return ( 
+class CreateEvent extends Component {
+    constructor() {
+        super();
+        this.state = {  }
+    }
+    render() { 
+        return ( 
 
-//             <input type="text" className="fullname"/>
-//             <input type="text" className="street"/>
-//             <input type="text" className="city"/>
-//             <input type="text" className="zip"/>
-//             <input type="text" className="phone"/>
-//             <input type="text" className="email"/>
-
-//             // <form action="/action_page.php" id="usrform">
-//             //     Name: <input type="text" name="usrname">
-//             //     <input type="submit">
-//             // </form>
-
-// <textarea name="comment" form="usrform">Enter text here...</textarea>
+            <div className="createvent">
+                <div>Create Event</div>
+                   
+            </div>
 
 
-//          );
-//     }
-// }
+            // <input type="text" className="fullname"/>
+            // <input type="text" className="street"/>
+            // <input type="text" className="city"/>
+            // <input type="text" className="zip"/>
+            // <input type="text" className="phone"/>
+            // <input type="text" className="email"/>
+
+            
+
+
+          
+
+
+         )
+    }
+}
  
-// export default CreateEvent;
+export default CreateEvent;
