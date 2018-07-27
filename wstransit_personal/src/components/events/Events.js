@@ -23,14 +23,14 @@ class Events extends Component {
 
 </div>
 
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/>
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/>
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/>
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/>
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/>
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/>
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/>
-// <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket"/> 
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/bellator mma.jpg" width="500" height="600" alt="bellatormma"/>
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/edclv2018.jpg" width="500" height="600" alt="edclv2018"/>
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/lakings.png" width="500" height="600" alt="lakings"/>
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/lakers.png" width="500" height="600" alt="lakerslogo"/>
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/rams.png" width="500" height="600" alt="ramslogo"/>
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/ladodgers.gif" width="500" height="600" alt="dodgerslogo"/>
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/niners.png" width="500" height="600" alt="ninerslogo"/>
+// <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/images/raiders.png" width="500" height="600" alt="raiderslogo"/> 
 
 
         );

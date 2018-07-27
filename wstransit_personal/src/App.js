@@ -4,6 +4,7 @@ import routes from './routes';
 import Header from './components/Header/Header';
 // import axios from 'axios';
 // import { Link } from 'react-router-dom'
+import Home from './components/Home/Home';
 
 
 
@@ -25,6 +26,7 @@ class App extends Component {
        <div className="body"></div>
        <div className="titleName">West Side Transit</div>
        <div className="westsidetransitelogo">logo</div>
+       <Home/>
 
 
 

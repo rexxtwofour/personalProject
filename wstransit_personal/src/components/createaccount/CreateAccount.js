@@ -10,8 +10,32 @@ import { connect } from 'react-redux';
 class CreateAccount extends Component {
     constructor() {
         super();
-        this.state = {  }
+        this.state = {  
+            fullname: '',
+            email: '',
+            passworrd: '',
+        }
     }
+
+
+    handleChangeFullName = (e) => {
+        this.setState({ name: e.target.value})
+    }
+
+    handleChangeEmail = (e) => {
+        this.setState({ email: e.target.value})
+    }
+
+    handleChangePassword = (e) => {
+        this.setState({ password: e.target.value})
+    }
+
+
+
+
+
+
+
     render() { 
         return (  
 

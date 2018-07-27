@@ -7,9 +7,24 @@
 const intialState = {
     fullName:'',
     email: '',
+    password: '',
+    street: '',
+    zip:'',
+    phone: '',
+    eventcomment:'',
+    eventname: '',
+    posttitle: '',
+    eventreviewcomment: '',
+    likes: ''
     
 
 }
+
+
+
+
+
+
 
 
 const  UPDATE_NAME = "UPDATE_NAME";

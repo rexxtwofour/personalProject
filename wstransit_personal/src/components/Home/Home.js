@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import westsidetransitlogo from './westsidetransitlogo.jpg';
 
 
 
@@ -7,7 +8,14 @@ class Home extends Component {
         return(
 
         <div>
-            
+
+
+
+            <img src="westsidetransitlogo.jpg" alt="westsidetransitlogo"/>
+            <body>
+                
+            </body>
+        
         </div>
 
         )

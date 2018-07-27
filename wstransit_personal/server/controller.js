@@ -11,7 +11,7 @@ create:  (req, res) => {
 },
 
 read:(req, res) => {
-
+    res.status
 
 
 },
@@ -36,6 +36,24 @@ delete: (req, res) => {
 
 
 
+
+
+
+create:  (req, res) => {
+
+
+
+},
+
+
+
+
+delete: (req, res) => {
+
+
+
+
+}
 
 
 
