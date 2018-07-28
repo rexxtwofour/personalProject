@@ -11,7 +11,7 @@ const intialState = {
     street: '',
     zip:'',
     phone: '',
-    eventcomment:'',
+    eventcomments:'',
     eventname: '',
     posttitle: '',
     eventreviewcomment: '',

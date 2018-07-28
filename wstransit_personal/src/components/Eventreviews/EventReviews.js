@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-
+import axios from 'axios';
 
 
 
@@ -9,19 +9,56 @@ import { connect } from 'react-redux';
 class EventReviews extends Component {
     constructor() {
         super();
-        this.state = {  }
+        this.state = { 
+            eventName: '',
+            postTitle: '',
+            eventreviewcomments: '',
+         }
     }
+
+    handleChangeEventName = (e) => {
+        this.setState({ eventName: e.target.value })
+    }
+
+    handleChangePostTitle = (e)  => {
+        this.setState({ postTitle: e.target.value })
+    }
+
+    handleChangeEventReviewCommments = (e) => {
+        this.setState({ eventreviewcomments: e.target.value})
+    }
+
+
+    eventReviewAdded = () => {
+        let addReview = {
+            eventName: this.state.eventName,
+            postTitle: this.state.age,
+            eventreviewcomments: this.state.eventreviewcomments,
+        };
+        console.log ('addReview', addReview)
+        axios.post('/api/eventReviewAdded', addReview).then(results => {
+            console.log('checking the added review', results)
+            this.setState({ eventinformation: results.data})
+        })
+    }
+
+
+
+
+
+
     render() { 
         return ( 
 
 
             <div className="eventreviews">
-                <div>Event Reviews</div>
-                <p>Event Name</p>
-                <input type="text"/>
-                <p>Post Title</p>
-                <input type="text"/>
+
                 
+
+                
+            <input onChange={this.handleChange}placeholder="eventname"/>
+            <input onChange={this.handleChange}placeholder="postTitle"/>
+            <input onChange={this.handleChange}placeholder="eventreviewcomments"/>
                 
 
             </div>

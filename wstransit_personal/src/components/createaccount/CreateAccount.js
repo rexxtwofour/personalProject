@@ -41,25 +41,12 @@ class CreateAccount extends Component {
 
 
 
-                // <form action="/action_page.php">
-                // Full Name:<br>
-                // <input type="text" name="firstname" value=""/>
-                // <br>
-                // Email:<br>
-                // <input type="text" name="email" value=""/>
-                // Password:<br>
-                // <input type="text" name="firstname" value=""/>
-                // <br><br>
-                // <input type="submit" value="Register!"/>
-                // </form> 
-
-
 
         <div className="accountpage">
-               <input type="text" className="fullname"/>
-               <input type="text" className="email"/>
-               <input type="text" className="password"/>
-               <button className="register"></button>
+               <input onChange={this.handleChangeFullName}placeholder="fullname"/>
+               <input onChange={this.handleChangeEmail}placeholder="email"/>
+               <input onChange={this.handleChangePassword}placeholder="password"/>
+               <button onClick={this.registerAccount} className="registerAccount">Register</button>
             
              <div>create account</div>
             
