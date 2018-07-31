@@ -8,41 +8,51 @@ export default function Navigation() {
         <div>
 
 
-
+    <nav>
     <div>
     <label for="show-menu" class="show-menu">Navigation</label>
     <input type="checkbox" id="show-menu" role="button"/>
         <ul id="menu">
           
+        <Link to ="/">
+        <li><a href="/">Home</a></li>
+        </Link>
+
+        <Link to ="/CreateAccount">
+        <li><a href="/CreateAccount">Create Account</a></li>
+        </Link>
+
+         <Link to ="/Events">
+        <li><a href="/Events">Events</a></li>
+        </Link>
+
+
+        <Link to ="/CreateEvent">
+        <li><a href="/CreateEvent">Create Event</a></li>
+        </Link>  
           
-        <li><a href="#">Home</a></li>
-          
-          
-        <li><a href="#">Create Account</a></li>
-          
-          
-        <li><a href="#">Events</a></li>
-          
-          
-        <li><a href="#">Create Event</a></li>
-          
-          
-        <li><a href="#">Event Reviews</a></li>
-          
-          
-        <li><a href="#">Payment Setup</a></li>
-          
-          
-        <li><a href="#">Contact</a></li>
-          
+        
+        <Link to ="/EventReviews">
+        <li><a href="/EventReviews">Event Reviews</a></li>
+        </Link>
+
+        
+        <Link to ="/PaymentSetup">
+        <li><a href="/PaymentSetup">Payment Setup</a></li>
+        </Link>
+        
+        
+        <Link to ="/Contact"> 
+        <li><a href="/Contact">Contact</a></li>
+        </Link>  
      
        
     </ul>
 </div>
+</nav>
 
 
-
-            <div className ="navbar">
+            {/* <div className ="navbar">
                 
                 <Link to ="/">
                 <button>Home</button>
@@ -81,7 +91,7 @@ export default function Navigation() {
                 <button>Contact</button>
                 </Link>
                
-            </div>
+            </div> */}
 
 
 

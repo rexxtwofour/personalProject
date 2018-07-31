@@ -18,28 +18,33 @@ export default class PaymentSetup extends Component {
 
 
 
-        <p>Full Name</p>
+        
         <div className="fullname">
+        Full Name
         <input type="text"/>
         </div>
         
-        <p>Address</p>
+      
         <div className="address">
+        Address
         <input type="text"/>
         </div>
 
-        <p>City</p>
+       
         <div className="city">
+        City
         <input type="text"/>
         </div>
 
-        <p>Zip</p>
+        
         <div className="zip">
+        Zip
         <input type="text"/>
         </div>
 
-        <p>Country</p>
+        
         <div className="country">
+        Country
         <input type="text"/>
         </div>
 
@@ -47,22 +52,28 @@ export default class PaymentSetup extends Component {
         <div className="creditcardinfo">Credit Card Info</div>
        
         
-        <p>Credit Card</p>
+        
         <div className="creditcardnumber">
+        Credit Card
         <input type="text"/>
         </div>
-        <p>Cvv number</p>
+
+
+        
         <div className="cvvnumber">
+        Cvv number
         <input type="text"/>
         </div>
 
-        <p>Card Holder Name</p>
+        
         <div className="cardholdername">
+        Card Holder Name
         <input type="text"/>
         </div>
 
-        <p>Expriration Date</p>
+       
         <div className="expirationdate">
+        Expriration Date
         <input type="text"/>
         </div>
 

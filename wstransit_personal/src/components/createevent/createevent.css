@@ -1,5 +1,5 @@
 .createEvent {
-    margin-top: 75px;
+    margin-top: 90px;
     background-color: darkgrey;
     padding: 50px;
     
@@ -8,9 +8,9 @@
 }
 
 .createEventTitle{
-    font-size: 70px;
+    font-size: 90px;
     color: gold;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .eventComments {

@@ -1,14 +1,64 @@
 .paymentlayout {
-margin-top: 50px;
+
 color: gold;
 background-color: darkgray;
-font-size: 20px;
+
 }
 
 
 
 .payment {
-    font-size: 50px;
+    margin-top: 70px;
+    font-size: 90px;
     color: gold;
     padding: 30px;
 }
+
+.billinginfo {
+    margin-top: 40px;
+    padding-top: 80px;
+    font-size: 50px;
+}
+
+.fullname {
+
+}
+
+.address {
+
+}
+
+.city {
+
+}
+
+.zip {
+
+}
+
+.country{
+
+}
+
+.creditcardinfo {
+    font-size: 40px;
+}
+
+
+.creditcardnumber {
+
+}
+
+.cvvnumber {
+
+}
+
+.cardholdername {
+
+}
+
+expirationdate {
+
+}
+
+
