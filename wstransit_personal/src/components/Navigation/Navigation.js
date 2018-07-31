@@ -1,17 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-// import './Navigation.css';
+import './Navigation.css';
 
 
 export default function Navigation() {
     return(
         <div>
-            <div className ="navbar">
-            <div>
-                
 
+
+
+    <div>
+    <label for="show-menu" class="show-menu">Navigation</label>
+    <input type="checkbox" id="show-menu" role="button"/>
+        <ul id="menu">
+          
+          
+        <li><a href="#">Home</a></li>
+          
+          
+        <li><a href="#">Create Account</a></li>
+          
+          
+        <li><a href="#">Events</a></li>
+          
+          
+        <li><a href="#">Create Event</a></li>
+          
+          
+        <li><a href="#">Event Reviews</a></li>
+          
+          
+        <li><a href="#">Payment Setup</a></li>
+          
+          
+        <li><a href="#">Contact</a></li>
+          
+     
+       
+    </ul>
+</div>
+
+
+
+            <div className ="navbar">
                 
-                <Link to ="/Home">
+                <Link to ="/">
                 <button>Home</button>
                 </Link>
                 
@@ -47,19 +80,15 @@ export default function Navigation() {
                 <Link to ="/Contact">
                 <button>Contact</button>
                 </Link>
-
-
-
-
-
-
-
-
-
-
+               
             </div>
-                
-            </div>
+
+
+
+
+
+
+
         </div>
     )
 }

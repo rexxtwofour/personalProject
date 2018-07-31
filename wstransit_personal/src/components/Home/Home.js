@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import westsidetransitlogo from './westsidetransitlogo.jpg';
+import  './Home.css';
 
 
 
@@ -9,14 +10,18 @@ class Home extends Component {
 
         <div>
 
+            <div className="westfont">Westside Transit</div>
+            <div className="westsidelogo">
+                 <img className= "westsidepic" src={westsidetransitlogo} alt="westsidetransitlogo"/>
+            </div>
+         
 
 
-            <img src="westsidetransitlogo.jpg" alt="westsidetransitlogo"/>
-            <body>
-                
-            </body>
-        
+
         </div>
+        
+
+
 
         )
     

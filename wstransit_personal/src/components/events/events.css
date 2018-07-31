@@ -1,0 +1,146 @@
+.events{
+    margin-top:70px;
+    border-radius: 50px;
+}
+
+.bellatormma{
+    border-radius: 50px;
+    margin:10px;
+}
+
+.edclv2018{
+    border-radius: 50px;
+    margin:10px;
+}
+.lakings{
+    border-radius: 50px;
+    margin:10px;
+}
+.lakerslogo{
+    border-radius: 50px;
+    margin:10px;
+}
+.ramslogo{
+    border-radius: 50px;
+    margin:10px;
+}
+.dodgerslogo{
+    border-radius: 50px;
+    margin:10px;
+}
+.ninerslogo{
+    border-radius: 50px;
+    margin:10px;
+}
+.raiderslogo{
+    border-radius: 50px;
+    margin:10px;
+}
+
+
+
+.eventsTitle {
+    color:gold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 120px; 
+    margin-top: 10px;
+}
+
+
+
+
+
+
+@media(max-width: 1599px){
+    .eventsTitle {  
+      font-size: 70px;
+  }
+    .bellatormma {
+        width: 270px;
+        height: 200px
+  
+      }  
+    .edclv2018{
+        width: 270px;
+        height: 200px
+  
+      } 
+    .lakings {
+        width: 270px;
+        height: 200px
+  
+      }
+    .lakerslogo {
+        width: 270px;
+        height: 200px
+  
+      }
+    .ramslogo {
+        width: 270px;
+        height: 200px
+  
+      }
+    .dodgerslogo {
+        width: 270px;
+        height: 200px
+  
+      }
+    .ninerslogo {
+        width: 270px;
+        height: 200px
+  
+      }
+    
+    .raiderslogo{
+      width: 270px;
+      height: 200px
+
+    }
+
+}
+
+
+
+
+
+
+
+
+  @media(max-width: 700px){
+    .eventsTitle {
+      font-size: 80px;
+    
+    }
+    .bellatormma{
+        width: 70px;
+        height: 100px;
+      }  
+    .edclv2018 {
+        width: 70px;
+        height: 100px;
+      } 
+    .lakings {
+        width: 70px;
+        height: 100px;
+      } 
+    .lakerslogo{
+        width: 70px;
+        height: 100px;
+      }  
+    .ramslogo {
+        width: 70px;
+        height: 100px;
+      } 
+    .dodgerslogo {
+        width: 70px;
+        height: 100px;
+      } 
+    .ninerslogo {
+        width: 70px;
+        height: 100px;
+      } 
+    .raiderslogo {
+      width: 70px;
+      height: 100px;
+    } 
+}

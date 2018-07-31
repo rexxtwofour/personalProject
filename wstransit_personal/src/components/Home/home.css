@@ -1,3 +1,75 @@
-body {
-    
+
+
+.westsidepic {
+ width: 700px;
+ height: 700px;
+ border-radius: 400px;
+ margin-top: 75px;
 }
+
+.westfont {
+    color:gold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 90px; 
+    margin-top: 50px;
+}
+
+
+
+
+
+@media(max-width: 1599px){
+    .westfont {  
+      font-size: 70px;
+  }
+    .westsidepic {
+      width: 500px;
+      height: 500px
+
+    }
+
+}
+  
+  @media(max-width: 700px){
+    .westfont {
+      font-size: 40px;
+    
+    }
+    .westsidepic {
+      width: 250px;
+      height: 250px;
+      margin-top:20px
+
+    }
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.bluebox {
+width: 500px;
+height: 500px;
+color: seagreen;
+background-color: darkcyan;
+}
+
+.greenbox {
+    color: yellow;
+    background-color: darkblue;
+    width: 500px;
+    height: 500px;
+} */

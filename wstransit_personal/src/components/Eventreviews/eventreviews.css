@@ -1,0 +1,25 @@
+.eventreviews {
+    margin-top: 75px;
+    background-color: darkgray;
+    height: 500px;
+    padding: 100px;
+}
+
+.eventReviewComments {
+    height:200px;
+    width:400px;
+}
+
+
+
+.submitReview{
+    font-size: 30px;
+    background-color: goldenrod;
+
+}
+
+.eventText {
+    font-size: 50px;
+    color: gold;
+    margin-top:20px;
+}

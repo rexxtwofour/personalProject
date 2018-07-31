@@ -1,7 +1,7 @@
 //set intial state for props 
 //set action types
 //set action creators
-
+// put user info into redux after log in 
 
 
 const intialState = {

@@ -1,0 +1,100 @@
+.createEvent {
+    margin-top: 75px;
+    background-color: darkgrey;
+    padding: 50px;
+    
+  
+
+}
+
+.createEventTitle{
+    font-size: 70px;
+    color: gold;
+    margin-top: 20px;
+}
+
+.eventComments {
+    width:200px;
+    height: 150px;
+}
+
+
+.fullname{
+    font-size: 20px;
+}
+
+.street{
+    font-size: 20px;
+}
+
+.city{
+    font-size: 20px;
+}
+
+.zip{
+    font-size: 20px;
+}
+
+.phone{
+    font-size: 20px;
+}
+
+.email{
+    font-size: 20px;
+}
+
+.datetime{
+    font-size: 20px;
+}
+
+.submit{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.dynamics {
+    margin-top:100px;
+}
+
+
+
+
+
+
+/* 
+
+
+@media(max-width: 1599px){
+    .createAccount {  
+      font-size: 70px;
+  }
+    . {
+        font-size: 20px;
+    }
+    . {
+        font-size: 20px;
+    }
+    . {
+        font-size: 20px;
+    }
+
+}
+  
+  @media(max-width: 700px){
+    .createAccount {
+      font-size: 50px;
+    }
+    .  {
+        font-size: 30px;
+    }
+    . {
+        font-size: 30px;
+    }
+    . {
+        font-size: 30px;
+    } */

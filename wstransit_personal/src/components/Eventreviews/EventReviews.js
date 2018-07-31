@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import axios from 'axios';
-
+import './eventreviews.css';
 
 
 
@@ -45,35 +45,27 @@ class EventReviews extends Component {
 
 
 
-
+// create functionality for event review button 
+//display review below then input section 
 
     render() { 
         return ( 
 
+            <div>
+
+            <div className="eventText">Event Reviews</div>                
 
             <div className="eventreviews">
-
                 
-
-                
-            <input onChange={this.handleChange}placeholder="eventname"/>
-            <input onChange={this.handleChange}placeholder="postTitle"/>
-            <input onChange={this.handleChange}placeholder="eventreviewcomments"/>
-                
+            <input onChange={this.handleChange}placeholder="Event name"></input>
+            <input onChange={this.handleChange}placeholder="Post Title"></input>
+            <input onChange={this.handleChange}className="eventReviewComments"placeholder="Event review comments"></input>
+            <button onClick={this.submitReview} className="submitReview">Submit</button>
 
             </div>
-            
+            </div>
 
             
-
-                // <form action="/action_page.php" id="usrform">
-                // Event Name: <input type="text" name="usrname">
-                // Post Title: <input type="text" name="usrname">
-                // <input type="submit">
-                // </form>
-                // <br>
-                // <textarea rows="4" cols="50" name="comment" form="usrform">
-                // Review and event!</textarea>
 
 
          );
@@ -81,4 +73,5 @@ class EventReviews extends Component {
 }
  
 export default EventReviews;
+
 

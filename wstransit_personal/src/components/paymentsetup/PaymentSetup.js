@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import './paymentsetup.css';
 
 export default class PaymentSetup extends Component {
   render() {
     return (
       <div>
-
-
-        <div className = "payment" >Payment setup</div>
+           <div className = "payment" >Payment setup</div>
+            <div className="paymentlayout">
+       
        
 
 
@@ -38,7 +39,7 @@ export default class PaymentSetup extends Component {
         </div>
 
         <p>Country</p>
-        <div className="country">>
+        <div className="country">
         <input type="text"/>
         </div>
 
@@ -66,7 +67,7 @@ export default class PaymentSetup extends Component {
         </div>
 
 
-
+        </div>
 
 
 

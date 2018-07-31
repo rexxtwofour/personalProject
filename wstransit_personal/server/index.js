@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
+const ctrl= require('./controller');
 require('dotenv').config();
 
 
@@ -15,6 +16,10 @@ massive(process.env.CONNECTION_STRING).then(database => {
 }).catch(error => {
     console.log('There was an error connecting to db', db);
 })
+
+app.post('/api/addcreateEvent',ctrl.createEvent)
+
+// app.get('/api/userEvents',ctrl.userEvents)
 
 const path = require('path')
 app.get('*', (req, res)=>{

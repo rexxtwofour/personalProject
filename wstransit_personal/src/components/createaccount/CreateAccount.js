@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import './createaccount.css';
+
 
 
 
@@ -35,25 +37,23 @@ class CreateAccount extends Component {
 
 
 
-
+//make sure to add functionality to the register button 
     render() { 
         return (  
+           <div> 
 
-
-
+            <div className="createAccount">Create Account</div>   
 
         <div className="accountpage">
-               <input onChange={this.handleChangeFullName}placeholder="fullname"/>
-               <input onChange={this.handleChangeEmail}placeholder="email"/>
-               <input onChange={this.handleChangePassword}placeholder="password"/>
+               <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
+               <input onChange={this.handleChangeEmail} className="email" placeholder="email"/>
+               <input onChange={this.handleChangePassword}className="password"  placeholder="password"/>
                <button onClick={this.registerAccount} className="registerAccount">Register</button>
-            
-             <div>create account</div>
-            
+         
             
        </div>
 
-
+        </div>
 
 
         )

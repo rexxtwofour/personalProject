@@ -1,16 +1,11 @@
 .App {
   text-align: center;
+  background-color: black
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: rgb(48, 51, 51);
+  height: 1200px;
   padding: 20px;
   color: white;
 }
-
-.home {
-  font-size: 1.5em;
-}
-
-.custom-style {}

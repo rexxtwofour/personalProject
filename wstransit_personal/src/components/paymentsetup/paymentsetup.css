@@ -1,0 +1,14 @@
+.paymentlayout {
+margin-top: 50px;
+color: gold;
+background-color: darkgray;
+font-size: 20px;
+}
+
+
+
+.payment {
+    font-size: 50px;
+    color: gold;
+    padding: 30px;
+}

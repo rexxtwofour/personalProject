@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import routes from './routes';
-import Header from './components/Header/Header';
+
 // import axios from 'axios';
 // import { Link } from 'react-router-dom'
 import Home from './components/Home/Home';
+import Navigation from './components/Navigation/Navigation';
 
 
 
@@ -14,7 +15,8 @@ class App extends Component {
     return (
       <div className="App">
        <div className="App-header">
-       <Header/>
+    
+       <Navigation/>
       {routes()}
       
        
@@ -23,10 +25,6 @@ class App extends Component {
 
 
 
-       <div className="body"></div>
-       <div className="titleName">West Side Transit</div>
-       <div className="westsidetransitelogo">logo</div>
-       <Home/>
 
 
 

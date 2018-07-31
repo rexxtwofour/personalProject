@@ -1,0 +1,37 @@
+.contact {
+    margin-top: 75px;
+    color: gold;
+    background-color: darkgray;
+    font-size: 40px;
+    padding: 40px;
+    height: 600px;
+}
+
+.socialmedia {
+    margin-top: 20px;
+    
+}
+
+.contactTitle {
+    font-size: 70px;
+    color: gold;
+    margin-top: 20px;
+}
+
+
+.company{
+    margin-top: 10px;
+
+}
+
+.number{
+    margin-top: 10px;
+}
+
+.email{
+    margin-top: 10px;
+}
+
+.address {
+    margin-top: 10px;
+}

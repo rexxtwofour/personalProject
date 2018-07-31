@@ -1,5 +1,73 @@
-.fullname {
+.accountpage {
+margin-top: 75px;
+color: gold;
+background-color: darkgray;
+height: 500px;
+}
+
+.registerAccount {
+    font-size: 30px;
+    background-color: goldenrod;
 
 }
 
 
+.createAccount {
+    font-size: 90px;
+    color: gold;
+    margin-top: 20px;
+}
+
+
+.fullname{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.email{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.password {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
+
+
+
+@media(max-width:  700px){
+    .createAccount {  
+      font-size: 40px;
+  }
+    
+
+}
+
+
+
+
+
+
+
+/*   
+  @media(max-width: 700px){
+    .createAccount {
+      font-size: 50px;
+    }
+    .fullname {
+        font-size: 10px;
+    }
+    .email {
+        font-size: 10px;
+    }
+    .password{
+        font-size: 10px;
+    }
+
+    
+}
+ */
