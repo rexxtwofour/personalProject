@@ -15,7 +15,7 @@ class CreateAccount extends Component {
         this.state = {  
             fullname: '',
             email: '',
-            passworrd: '',
+            password: '',
         }
     }
 
@@ -48,6 +48,7 @@ class CreateAccount extends Component {
                <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
                <input onChange={this.handleChangeEmail} className="email" placeholder="email"/>
                <input onChange={this.handleChangePassword}className="password"  placeholder="password"/>
+
                <button onClick={this.registerAccount} className="registerAccount">Register</button>
          
             
@@ -59,5 +60,5 @@ class CreateAccount extends Component {
         )
     }
 }
-
 export default CreateAccount;
+//export default connect( state => state, { login, register } )(CreateAccount);

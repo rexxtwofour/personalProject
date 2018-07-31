@@ -46,6 +46,7 @@ li:hover a {
   text-align: center;
   padding: 10px 0;
   display: none;
+  min-width: 22em;
 }
 
 input[type=checkbox]{
@@ -61,21 +62,27 @@ input[type=checkbox]:checked ~ #menu{
 @media(max-width : 760px){
  
   ul {
+    min-width: 10em; 
       position: static;
       display: none;
   }
 
   li {
+     min-width: 10em;
       margin-bottom: 1px;
   }
 
   ul li, li a {
-      width: 100%;
+    min-width: 10em;
+     
   }
 
   .show-menu {
       display:block;
   } 
+
+
+
 
 }
 

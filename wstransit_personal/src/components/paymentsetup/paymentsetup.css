@@ -62,3 +62,13 @@ expirationdate {
 }
 
 
+
+
+
+@media(max-width : 760px){
+.payment {
+    font-size: 60px;
+}
+
+
+}

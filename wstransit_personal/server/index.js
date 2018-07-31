@@ -5,6 +5,32 @@ const ctrl= require('./controller');
 require('dotenv').config();
 
 
+
+
+
+
+//middleware
+const checkForSession = require('./middlewares/checkForSession');
+
+
+app.use( bodyParser.json() );
+app.use( session({
+    secret: process.env.SESSION_SECRET,
+    resave: false, 
+    saveUninitialized: true
+}));
+app.use( checkForSession );
+app.use( express.static( `${__dirname}/build` ) );
+
+//AUTH
+app.post( '/api/login', auth_controller.login );
+
+
+
+
+
+
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -25,6 +51,17 @@ const path = require('path')
 app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '../build/index.html'));
 })
+
+
+
+
+
+
+
+
+
+
+
 
 
 
