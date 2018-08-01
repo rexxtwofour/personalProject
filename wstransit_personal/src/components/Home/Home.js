@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import westsidetransitlogo from './westsidetransitlogo.jpg';
 import  './Home.css';
+import promovideo from '/Users/ericrivera/devmtn/week6/wstransit_personal/src/images/promovideo.mov';
 
 
 
@@ -16,6 +17,14 @@ class Home extends Component {
             </div>
          
 
+            <div className =  "container">
+            <video  className="video "  autoPlay loop>
+           
+               <source src ={promovideo}/>
+             
+            </video>
+           
+            </div>
 
 
         </div>

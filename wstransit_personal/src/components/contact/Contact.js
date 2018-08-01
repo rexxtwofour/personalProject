@@ -49,3 +49,25 @@ export default Contact;
         //         <img src={twittervector} width="50" height="50" alt="twitter"/> 
         //         <img src={instagramvector} width="50" height="50" alt="instagram"/> 
         // </div>
+
+
+
+
+     // the dead saloon
+     // ostrich sans light
+     // old scotch vintage regular
+     // old scotch vintage shadow regular
+     // old scotch shadow regular
+     // old scotch modern regular
+     // nashville regular
+     // galacticastle light
+     // elizabeth regular
+     // disco regular
+     // daniel regular
+     // boomshell font\
+
+     //googlefonts
+
+    //https://fonts.google.com/specimen/Shadows+Into+Light
+    //https://fonts.google.com/specimen/Architects+Daughter
+    //https://fonts.google.com/specimen/Syncopate
