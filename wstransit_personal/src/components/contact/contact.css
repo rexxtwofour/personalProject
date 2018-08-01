@@ -13,9 +13,9 @@
 }
 
 .contactTitle {
-    font-size: 70px;
+    font-size: 90px;
     color: gold;
-    margin-top: 90px;
+    margin-top: 120px;
 }
 
 
@@ -34,4 +34,58 @@
 
 .address {
     margin-top: 10px;
+}
+
+
+
+
+
+
+
+@media(max-width: 1599px){
+    .contactTitle  {  
+      font-size: 70px;
+  }
+
+}
+
+
+@media(max-width: 700px){
+    .contactTitle  {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    
+    
+
+.company{
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.number{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.email{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.address {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.copyright {
+    margin-top: 100px;
+    font-size: 10px;
+}
+
+
+
+
 }

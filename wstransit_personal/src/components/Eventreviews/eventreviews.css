@@ -21,5 +21,52 @@
 .eventText {
     font-size: 90px;
     color: gold;
-    margin-top:70px;
+    margin-top: 120px;
 }
+
+.eventName {
+ font-size:20px;
+}
+
+.postTitle {
+    font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 1599px){
+    .eventText {  
+      font-size: 70px;
+  }
+
+}
+
+
+  @media(max-width: 700px){
+    .eventText {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    .eventreviews {
+        margin-top: 40px;
+        height: 500px;
+        padding: 20px;
+    }
+
+    .submitReview{
+    font-size: 40px;
+    }
+    .eventReviewComments {
+        height:200px;
+        width:300px;
+    }
+    
+
+  }

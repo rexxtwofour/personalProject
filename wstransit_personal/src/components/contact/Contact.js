@@ -21,10 +21,6 @@ class Contact extends Component {
         <div className="number">+562-201-2488</div>
         <div className="email">WestsideTransit@gmail.com</div>
         <div className="address">8232 San Luis Potosi</div>
-            
-
-
-
         <div className="copyright">Copyright @ weststidetransit</div>
 
         </div> 

@@ -10,8 +10,8 @@ export default function Navigation() {
 
     <nav>
     <div>
-    <label for="show-menu" class="show-menu">Navigation</label>
-    <input type="checkbox" id="show-menu" role="button"/>
+    <label for="show-menu" className="show-menu">Navigation</label>
+    <input type="checkbox" className="navbutton" id="show-menu" role="button"/>
         <ul id="menu">
           
         <Link to ="/">

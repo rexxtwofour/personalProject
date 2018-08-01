@@ -57,10 +57,10 @@ class EventReviews extends Component {
 
             <div className="eventreviews">
                 
-            <input onChange={this.handleChange}placeholder="Event name"></input>
-            <input onChange={this.handleChange}placeholder="Post Title"></input>
+            <input onChange={this.handleChange}className="eventName"placeholder="Event name"></input>
+            <input onChange={this.handleChange}className="postTitle"placeholder="Post Title"></input>
             <input onChange={this.handleChange}className="eventReviewComments"placeholder="Event review comments"></input>
-            <button onClick={this.submitReview} className="submitReview">Submit</button>
+            <button onClick={this.submitReview}className="submitReview">Submit</button>
 
             </div>
             </div>

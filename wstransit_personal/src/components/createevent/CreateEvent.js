@@ -163,6 +163,8 @@ class CreateEvent extends Component {
                    
             </div>
 
+        
+
                 { event }
           
 
