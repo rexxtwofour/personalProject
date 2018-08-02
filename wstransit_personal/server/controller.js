@@ -8,8 +8,8 @@ module.exports = {
 //user events 
 createEvent:  (req, res) => {
         console.log('creating here', req.body)
-        const{ user_id, fullname , street, city, zip, phone, email, datetime, location}=req.body;
-        req.app.get('db').create_event([ user_id, fullname, street, city, zip , phone,email, datetime, location])
+        const{ user_id, fullname , street, city, zip, phone, email, datetime, location,eventcomments}=req.body;
+        req.app.get('db').create_event([ user_id, fullname, street, city, zip , phone,email, datetime, location, eventcomments])
         .then((response) => {
             console.log('this is for create event',response)
             res.status(200).json(response)
@@ -28,14 +28,14 @@ read:(req, res) => {
 },
 
 update: (req, res) => {
-    const{ name , street, city, zip, phone, email, datetime, location}=req.body;
+    const{ user_id,fullname, street, city, zip, phone, email, datetime, location, eventcomments}=req.body;
     const eventinformationId = req.params.id
     const eventinformationIndex = eventinformation.findIndex( eventinformation => eventinformation.id == eventinformationId)
     let eventinformation = eventinformation[eventinformationIndex];
 
     eventinformation[ eventinformationIndex ] = {
-        
-        name: name || eventinformation.name,
+        user_id: user_id || eventinformation.user_id,
+        fullname: fullname || eventinformation.fullname,
         street: street || eventinformation.street,
         city: city || eventinformation.city,
         zip: zip || eventinformation.zip,
@@ -43,6 +43,7 @@ update: (req, res) => {
         email: email || eventinformation.email,
         datetime: datetime || eventinformation.datetime,
         location: location || eventinformation.location,
+        eventcomments: eventcomments || eventinformation.eventcomments,
     }
     req.app.get('db').update_event
 

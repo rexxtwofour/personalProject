@@ -23,10 +23,24 @@ class CreateEvent extends Component {
             datetime: '',
             location: '',
             eventcomments: '',
-            eventinformation: []
+            eventInformationInventory: [],
+            editText: '',
 
         }
     }
+
+
+    componentDidMount(){
+        axios.get('/api/eventInformationInventory').then(response => {
+          this.setState({
+            eventInformationInventory: response.data
+          })
+        })
+      }
+
+
+
+
 
 
      handleChangeFullName = (e) => {
@@ -66,13 +80,40 @@ class CreateEvent extends Component {
      }
 
 
-
-
-
-
-
+//create event
      createEvent = () => {
-         let add = {
+        let add = {
+           fullname: this.state.name,
+           street: this.state.street,
+           city: this.state.city,
+           zip: this.state.zip,
+           phone: this.state.phone,
+           email: this.state.email,
+           datetime: this.state.datetime,
+           location: this.state.location,
+           eventcomments: this.state.eventcomments
+        };
+        console.log('add', add)
+        axios.post('/api/addcreateEvent',add).then(results => {
+            console.log('checking the created event', results)
+            this.setState({ eventinformation: results.data});
+        })
+    }
+
+
+
+
+//update event
+editHandler = (e) => {
+    this.setState({
+      editText: e.target.value
+    })
+  }
+
+
+editEventInformation = (id) => {
+    let edit = {
+    id: id,
             fullname: this.state.name,
             street: this.state.street,
             city: this.state.city,
@@ -82,64 +123,73 @@ class CreateEvent extends Component {
             datetime: this.state.datetime,
             location: this.state.location,
             eventcomments: this.state.eventcomments
-         };
-         console.log('add', add)
-         axios.post('/api/addcreateEvent',add).then(results => {
-             console.log('checking the created event', results)
-             this.setState({ eventinformation: results.data});
-         })
-     }
+  };
+  axios.put(`/api/eventInformationInventoryEdit`, edit)
+}
+
+//read event
+
+displayCreatedEvent = () => {
+    let display = {
+        fullname: this.state.name,
+        street: this.state.street,
+        city: this.state.city,
+        zip: this.state.zip,
+        phone: this.state.phone,
+        email: this.state.email,
+        datetime: this.state.datetime,
+        location: this.state.location,
+        eventcomments: this.state.eventcomments
+     };
+     console.log('looking up events', display)
+     axios.get('/api/userEvents',display).then(results => {
+         console.log('showing if events worked', results)
+         this.setState({ eventinformation: results.data});
+     })
+    }
 
 
+//delete event
+
+
+
+
+deleteInventory = (id) => {
+    axios.delete(`/api/eventInformationdelete/${id}`)
+  }
+  
 
      
 
-    // displayCreatedEvent = () => {
-    //     let display = {
-    //         fullname: this.state.name,
-    //         street: this.state.street,
-    //         city: this.state.city,
-    //         zip: this.state.zip,
-    //         phone: this.state.phone,
-    //         email: this.state.email,
-    //         datetime: this.state.datetime,
-    //         location: this.state.location,
-    //         eventcomments: this.state.eventcomments
-    //      };
-    //      console.log('looking up events', display)
-    //      axios.get('/api/userEvents',display).then(results => {
-    //          console.log('showing if events worked', results)
-    //          this.setState({ eventinformation: results.data});
-    //      })
+   
 
 
 
-
-    //     }
-
-
-    // }     
-
+    
 
 
 
 
     render() { 
-        let event = this.state.eventinformation.map(entry => {
+        let event = this.state.eventinformation.map((e,i) =>{
             return <div>
-                    <div className="dynamics">
-                    <div className="fullnamedynamic"> {entry.fullname}</div>
-                    <div className="streetdynamic"> {entry.street} </div>
-                    <div className="citydynamic"> {entry.city}</div>
-                    <div className="zipdynamic">  {entry.zip}</div>
-                    <div className="phonedynamic">{entry.phone}</div>
-                    <div className="emaildynamic"> {entry.email}</div>
-                    <div className="datetimedynamic"> {entry.datetime}</div>
-                    <div className="locationdynamic">  {entry.location}</div>
-                    <div className="eventcommentsdynamic">{entry.eventcomments}</div>
-                    </div>
-                   
-                   
+                        <div key={e.id}>
+                        <div className="dynamics">
+                        <div className="fullnamedynamic"> {e.fullname}</div>
+                        <div className="streetdynamic"> {e.street} </div>
+                        <div className="citydynamic"> {e.city}</div>
+                        <div className="zipdynamic">  {e.zip}</div>
+                        <div className="phonedynamic">{e.phone}</div>
+                        <div className="emaildynamic"> {e.email}</div>
+                        <div className="datetimedynamic"> {e.datetime}</div>
+                        <div className="locationdynamic">  {e.location}</div>
+                        <div className="eventcommentsdynamic">{e.eventcomments}</div>
+                    <button className="deletebutton"  onClick={() => this.editEventInformation(e.id)}>Edit</button>
+                        <input onChange={this.editHandler}/>
+                    <button className="deletebutton" onClick={() => this.deleteEventInformation(e.id)}>Delete</button>
+                        </div>
+                    
+                        </div>
                     </div>
         })
         return ( 

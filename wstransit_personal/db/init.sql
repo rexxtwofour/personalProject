@@ -35,7 +35,7 @@ create table posts (
 create table userEvents (
     ,id serial primary key
     ,user_id int references users(id)
-    ,name text not null
+    ,fullname text not null
     ,street text not null
     ,city text not null
     ,zip text not null
@@ -43,6 +43,7 @@ create table userEvents (
     ,email text not null
     ,datetime text not null
     ,location text not null
+    ,eventcomments text not null
 );
 
 
@@ -55,28 +56,28 @@ create table userEvents (
 
 //create user events data
 
-insert into userEvents (user_id, name, street, city, zip, phone, email, datetime, location)
-values ( 1 ,  'Kate',  '123 ford st' ,  'downey' ,  90241 ,  562 774 3489 ,  'disneyprincess@gmail.com' ,  'oct 25 2018',  'disneyland'   ) returning *;
+insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
+values ( 1 ,  'Kate',  '123 ford st' ,  'downey' ,  90241 ,  562 774 3489 ,  'disneyprincess@gmail.com' ,  'oct 25 2018',  'disneyland' ,'the magical kingdom!'  ) returning *;
 
 
-insert into userEvents (user_id, name, street, city, zip, phone, email, datetime, location)
-values ( 2 ,  'Jeremy' ,  '564 filthy rd' ,  'visailia' ,  98343 ,  345 983 2898 , 'bigdog78@yahoo.com' ,  'apr 3 2018' ,  'redwood forrest park' ) returning *;
+insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
+values ( 2 ,  'Jeremy' ,  '564 filthy rd' ,  'visailia' ,  98343 ,  345 983 2898 , 'bigdog78@yahoo.com' ,  'apr 3 2018' ,  'redwood forrest park', 'so epically tall' ) returning *;
 
 
-insert into userEvents (user_id, name, street, city, zip, phone, email, datetime, location)
-values ( 3 ,  'Ricky' ,  '462 dunnit rd' ,  'houston',  98723,  653 873 3445 ,  'rickysticky@gmail.com' ,  'jul 6 2019',  'the broad museum'  ) returning *;
+insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
+values ( 3 ,  'Ricky' ,  '462 dunnit rd' ,  'houston',  98723,  653 873 3445 ,  'rickysticky@gmail.com' ,  'jul 6 2019',  'the broad museum' ,'wow, i love art' ) returning *;
 
 
-insert into userEvents (user_id, name, street, city, zip, phone, email, datetime, location)
-values ( 4 ,  'Herb' ,  '78 squint st' ,  'oakland' ,  23887 ,  873 987 2928 ,  'birdistheword@yahoo.com' ,  'sep 7 2018' ,  'angel stadium'   ) returning *;
+insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
+values ( 4 ,  'Herb' ,  '78 squint st' ,  'oakland' ,  23887 ,  873 987 2928 ,  'birdistheword@yahoo.com' ,  'sep 7 2018' ,  'angel stadium', 'light up that halo!'   ) returning *;
 
 
-insert into userEvents (user_id, name, street, city, zip, phone, email, datetime, location)
-values ( 5 ,  'Debbie' , '8723 tressle ',  'carson',  92838 ,  349 872 3498 , 'thelittlehostess@yahoo.com' , 'jun 25 2018' ,  'bill gram hall'   ) returning *;
+insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
+values ( 5 ,  'Debbie' , '8723 tressle ',  'carson',  92838 ,  349 872 3498 , 'thelittlehostess@yahoo.com' , 'jun 25 2018' ,  'bill gram hall', 'music forever!'   ) returning *;
 
 
-insert into userEvents (user_id, name, street, city, zip, phone, email, datetime, location)
-values ( 6 ,  'Kent' , '5522 zizzx lane' ,  'brentwood' ,  90334 ,  873 789 8732 ,  'gokentstate@yahoo.com' , 'feb 9 2018' ,  'san manuel amphitheatre'  ) returning *;
+insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
+values ( 6 ,  'Kent' , '5522 zizzx lane' ,  'brentwood' ,  90334 ,  873 789 8732 ,  'gokentstate@yahoo.com' , 'feb 9 2018' ,  'san manuel amphitheatre' ,'what a view' ) returning *;
 
 
 //create posts data
