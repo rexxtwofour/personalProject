@@ -3,7 +3,6 @@ let eventinformation = []
 
 module.exports = {
 
-//do i have to Create for each table listed on sql or the init file?
 
 //user events 
 createEvent:  (req, res) => {
@@ -61,6 +60,9 @@ delete: (req, res) => {
 
 
 
+},
+userEvents: (req, res) => {
+    //putstuffhere
 }
 
 }
@@ -68,7 +70,6 @@ delete: (req, res) => {
 
 
 
-//create accounts
 // createUsersAccount :  (req, res) => {
 //     console.log('ceating account', req.body)
 //     const { fullname, email, password } = req.body;

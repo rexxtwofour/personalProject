@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './createaccount.css';
-
+import axios from 'axios';
 
 
 
@@ -17,6 +17,7 @@ class CreateAccount extends Component {
             email: '',
             password: '',
         }
+        this.registerAccount = this.registerAccount.bind(this)
     }
 
 
@@ -35,7 +36,15 @@ class CreateAccount extends Component {
 
 
 
-
+registerAccount(){
+    axios.post('/register', this.state)
+        .then( registeredUser => {
+            console.log(registeredUser)/* instead of a console.log() use this information to set the state to the user that is logged in */
+        })
+        .catch( err => {
+            console.log(err)
+        })
+}
 
 //make sure to add functionality to the register button 
     render() { 
@@ -44,15 +53,15 @@ class CreateAccount extends Component {
 
             <div className="createAccount">Create Account</div>   
 
-        <div className="accountpage">
-               <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
-               <input onChange={this.handleChangeEmail} className="email" placeholder="email"/>
-               <input onChange={this.handleChangePassword}className="password"  placeholder="password"/>
+            <div className="accountpage">
+                <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
+                <input onChange={this.handleChangeEmail} className="email" placeholder="email"/>
+                <input onChange={this.handleChangePassword}className="password"  placeholder="password"/>
 
-               <button onClick={this.registerAccount} className="registerAccount">Register</button>
-         
+                <button onClick={this.registerAccount} className="registerAccount">Register</button>
             
-       </div>
+            
+            </div>
 
         </div>
 

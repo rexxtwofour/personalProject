@@ -7,7 +7,7 @@ drop table if exists userEvents;
 
 create table users (
     ,id serial primary key
-    ,name text not null
+    ,fullname text not null
     ,email text not null
     ,password text not null
 );
@@ -48,6 +48,29 @@ create table userEvents (
 
 
 
+//add dummy data to users so table works
+// then try to add the events to the table
+
+
+//create users data
+
+insert into users ( fullname, email, password )
+values ('Kate', 'disneyprincess@gmail.com', 'flyhigh' ); 
+
+insert into users ( fullname, email, password )
+values ('Jeremy','bigdog78@yahoo.com', 'ruffruff' ); 
+
+insert into users ( fullname, email, password )
+values ('Ricky','rickysticky@gmail.com', 'pickupsticks'); 
+
+insert into users ( fullname, email, password )
+values ('Herb','birdistheword@yahoo.com', 'thelovebug55'); 
+
+insert into users ( fullname, email, password )
+values ('Debbie','thelittlehostess@yahoo.com', 'cupcakequeen'); 
+
+insert into users ( fullname, email, password )
+values ('Kent','gokentstate@yahoo.com', 'outinthehills' ); 
 
 
 
@@ -57,27 +80,27 @@ create table userEvents (
 //create user events data
 
 insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
-values ( 1 ,  'Kate',  '123 ford st' ,  'downey' ,  90241 ,  562 774 3489 ,  'disneyprincess@gmail.com' ,  'oct 25 2018',  'disneyland' ,'the magical kingdom!'  ) returning *;
+values ( 1 ,  'Kate',  '123 ford st' ,  'downey' ,  90241 ,  562 774 3489 ,  'disneyprincess@gmail.com' ,  'oct 25 2018',  'disneyland' ,'the magical kingdom!'  ) 
 
 
 insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
-values ( 2 ,  'Jeremy' ,  '564 filthy rd' ,  'visailia' ,  98343 ,  345 983 2898 , 'bigdog78@yahoo.com' ,  'apr 3 2018' ,  'redwood forrest park', 'so epically tall' ) returning *;
+values ( 2 ,  'Jeremy' ,  '564 filthy rd' ,  'visailia' ,  98343 ,  345 983 2898 , 'bigdog78@yahoo.com' ,  'apr 3 2018' ,  'redwood forrest park', 'so epically tall' ) 
 
 
 insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
-values ( 3 ,  'Ricky' ,  '462 dunnit rd' ,  'houston',  98723,  653 873 3445 ,  'rickysticky@gmail.com' ,  'jul 6 2019',  'the broad museum' ,'wow, i love art' ) returning *;
+values ( 3 ,  'Ricky' ,  '462 dunnit rd' ,  'houston',  98723,  653 873 3445 ,  'rickysticky@gmail.com' ,  'jul 6 2019',  'the broad museum' ,'wow, i love art' ) 
 
 
 insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
-values ( 4 ,  'Herb' ,  '78 squint st' ,  'oakland' ,  23887 ,  873 987 2928 ,  'birdistheword@yahoo.com' ,  'sep 7 2018' ,  'angel stadium', 'light up that halo!'   ) returning *;
+values ( 4 ,  'Herb' ,  '78 squint st' ,  'oakland' ,  23887 ,  873 987 2928 ,  'birdistheword@yahoo.com' ,  'sep 7 2018' ,  'angel stadium', 'light up that halo!'   ) 
 
 
 insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
-values ( 5 ,  'Debbie' , '8723 tressle ',  'carson',  92838 ,  349 872 3498 , 'thelittlehostess@yahoo.com' , 'jun 25 2018' ,  'bill gram hall', 'music forever!'   ) returning *;
+values ( 5 ,  'Debbie' , '8723 tressle ',  'carson',  92838 ,  349 872 3498 , 'thelittlehostess@yahoo.com' , 'jun 25 2018' ,  'bill gram hall', 'music forever!'   ) 
 
 
 insert into userEvents (user_id, fullname, street, city, zip, phone, email, datetime, location, eventcomments)
-values ( 6 ,  'Kent' , '5522 zizzx lane' ,  'brentwood' ,  90334 ,  873 789 8732 ,  'gokentstate@yahoo.com' , 'feb 9 2018' ,  'san manuel amphitheatre' ,'what a view' ) returning *;
+values ( 6 ,  'Kent' , '5522 zizzx lane' ,  'brentwood' ,  90334 ,  873 789 8732 ,  'gokentstate@yahoo.com' , 'feb 9 2018' ,  'san manuel amphitheatre' ,'what a view' ) 
 
 
 //create posts data
@@ -97,6 +120,9 @@ values (  4 , 'i love traveling with you guys', 34,  'Mondrian party', 'LAs Best
 
 insert into posts (user_id, comment, likes, event_title, post_title)
 values (  5 , 'wow you guys are the best', 63,  'avalon nightclub' ,  'Groovin'  )
+
+
+
 
 
 -- input type date

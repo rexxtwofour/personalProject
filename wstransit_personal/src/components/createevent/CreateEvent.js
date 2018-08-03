@@ -40,45 +40,11 @@ class CreateEvent extends Component {
 
 
 
-
-
-
-     handleChangeFullName = (e) => {
-         this.setState({ name: e.target.value })
-     }
-
-     handleChangeStreet= (e) => {
-         this.setState({ street: e.target.value })
-     }
-
-     handleChangeCity= (e) => {
-         this.setState({ city: e.target.value })
-     }
-
-     handleChangeZip= (e) => {
-         this.setState({ zip: e.target.value })
-     }
-
-     handleChangePhone= (e) => {
-         this.setState({ phone: e.target.value })
-     }
-
-     handleChangeEmail= (e) => {
-         this.setState({ email: e.target.value })
+    handleChange(key, val){
+        this.setState({
+            [key]: val
+        })
     }
-
-     handleChangeDatetime= (e) => {
-        this.setState({ datetime: e.target.value })
-    }
-          
-    handleChangelocation= (e) => {
-        this.setState({ location: e.target.value })
-     }
-
-     handleChangeEventComments= (e) => {
-         this.setState({ eventcomments: e.target.value })
-     }
-
 
 //create event
      createEvent = () => {
@@ -97,6 +63,8 @@ class CreateEvent extends Component {
         axios.post('/api/addcreateEvent',add).then(results => {
             console.log('checking the created event', results)
             this.setState({ eventinformation: results.data});
+        }).catch(error => {
+            console.log(error)
         })
     }
 
@@ -124,7 +92,11 @@ editEventInformation = (id) => {
             location: this.state.location,
             eventcomments: this.state.eventcomments
   };
-  axios.put(`/api/eventInformationInventoryEdit`, edit)
+  axios.put(`/api/eventInformationInventoryEdit`, edit).then(e => {
+      console.log('update response',e)
+  }).catch(error => {
+    console.log(error)
+})
 }
 
 //read event
@@ -145,6 +117,8 @@ displayCreatedEvent = () => {
      axios.get('/api/userEvents',display).then(results => {
          console.log('showing if events worked', results)
          this.setState({ eventinformation: results.data});
+     }).catch(error => {
+         console.log(error)
      })
     }
 
@@ -155,9 +129,12 @@ displayCreatedEvent = () => {
 
 
 deleteInventory = (id) => {
-    axios.delete(`/api/eventInformationdelete/${id}`)
+    axios.delete(`/api/eventInformationdelete/${id}`).then(results => {
+        console.log('showing if delete events', results)
+    }).catch(error => {
+        console.log(error)
+    })
   }
-  
 
      
 
@@ -165,15 +142,12 @@ deleteInventory = (id) => {
 
 
 
-    
-
 
 
 
     render() { 
-        let event = this.state.eventinformation.map((e,i) =>{
-            return <div>
-                        <div key={e.id}>
+        let event = this.state.eventInformationInventory.map(e =>{
+            return <div key={e.id}>
                         <div className="dynamics">
                         <div className="fullnamedynamic"> {e.fullname}</div>
                         <div className="streetdynamic"> {e.street} </div>
@@ -190,7 +164,6 @@ deleteInventory = (id) => {
                         </div>
                     
                         </div>
-                    </div>
         })
         return ( 
             <div>
@@ -200,16 +173,16 @@ deleteInventory = (id) => {
                 <div className="createEvent">
                
 
-            <input onChange={this.handleChangeFullName}className="fullname" placeholder="fullname"></input>
-            <input onChange={this.handleChangeStreet}className="street" placeholder="street"></input>
-            <input onChange={this.handleChangeCity}className="city" placeholder="city"></input>
-            <input onChange={this.handleChangeZip}className="zip" placeholder="zip"></input>
-            <input onChange={this.handleChangePhone}className="phone" placeholder="phone"></input>
-            <input onChange={this.handleChangeEmail}className="email" placeholder="email"></input>
-            <input onChange={this.handleChangeDatetime}className="datetime" type='datetime-local' ></input>
-            <input onChange={this.handleChangelocation}className="location" placeholder="location"></input>
-            <input onChange={this.handleChangeEventComments}className= "eventComments"placeholder="eventcomments"></input>
-            <button onClick={this.createEvent}className="submit">Submit</button>
+            <input onChange={ e => this.handleChange('fullname',e.target.value)}className="fullname" placeholder="fullname"></input>
+            <input onChange={ e => this.handleChange( 'street', e.target.value)}className="street" placeholder="street"></input>
+            <input onChange={ e => this.handleChange( 'city', e.target.value)}className="city" placeholder="city"></input>
+            <input onChange={ e => this.handleChange( 'zip', e.target.value)}className="zip" placeholder="zip"></input>
+            <input onChange={e => this.handleChange( 'phone', e.target.value)}className="phone" placeholder="phone"></input>
+            <input onChange={e => this.handleChange( 'email', e.target.value)}className="email" placeholder="email"></input>
+            <input onChange={e => this.handleChange( 'datetime', e.target.value)}className="datetime" type='datetime-local' ></input>
+            <input onChange={e => this.handleChange( 'location', e.target.value)}className="location" placeholder="location"></input>
+            <input onChange={e => this.handleChange( 'eventcomments', e.target.value)}className= "eventComments"placeholder="eventcomments"></input>
+            <button onClick={ this.createEvent}className="submit">Submit</button>
                    
             </div>
 

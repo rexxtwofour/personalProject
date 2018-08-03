@@ -11,3 +11,4 @@ set
 ,location = ${location}
 ,eventcomments =${eventcomments}
 Where ${id}
+returning *;
