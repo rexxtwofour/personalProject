@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+// import { Link } from 'react-router-dom';
+// import { connect } from 'react-redux';
 import axios from 'axios';
 import './createevent.css';
 
@@ -184,14 +184,17 @@ deleteInventory = (id) => {
             <input onChange={e => this.handleChange( 'eventcomments', e.target.value)}className= "eventComments"placeholder="eventcomments"></input>
             <button onClick={ this.createEvent}className="submit">Submit</button>
                    
-            </div>
-
-        
+            <div className="display">
 
                 { event }
           
+                </div>
 
 
+
+
+                
+                </div>
             </div>
 
          )

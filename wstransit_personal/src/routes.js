@@ -11,7 +11,7 @@ import Contact from './components/Contact/Contact';
 
 export default function Routes (){
     return(
-        <Switch>
+    <Switch>
         <Route component={ Home } exact path ="/" />
         <Route component={ CreateAccount} path="/CreateAccount" />
         <Route component={ CreateEvent } path="/CreateEvent" />

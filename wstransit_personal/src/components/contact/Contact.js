@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+// import { Link } from 'react-router-dom';
+// import { connect } from 'react-redux';
 import './contact.css';
 // import facebookvector from '../facebookvector.jpg';
 // import twittervector from '../twittervector.png';

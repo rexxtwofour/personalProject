@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import routes from './routes';
 
+
+
 // import axios from 'axios';
 // import { Link } from 'react-router-dom'
-import Home from './components/Home/Home';
+
 import Navigation from './components/Navigation/Navigation';
+
 
 
 
@@ -18,8 +21,8 @@ class App extends Component {
     
        <Navigation/>
       {routes()}
-      
-       
+    
+  
 
       </div>
 

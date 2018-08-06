@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+// import { Link } from 'react-router-dom';
+// import { connect } from 'react-redux';
 
 
 
@@ -12,15 +12,14 @@ class SelectedEvents extends Component {
     state = {  }
     render() { 
         return ( 
-
-            
-
             <div className="selectedevents">
             
             
+            
+            
+            
+            
             </div>
-
-
 
             // <img src=" picture url " alt="first event" height="42" width="42"/>
             // <p>this  is a paragraph of text for each event the company is having </p>

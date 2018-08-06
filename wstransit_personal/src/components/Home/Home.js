@@ -18,7 +18,7 @@ class Home extends Component {
          
 
             <div className =  "container">
-            <video  className="video "  autoPlay loop>
+            <video  className = "video "  autoPlay loop controls>
            
                <source src ={promovideo}/>
              

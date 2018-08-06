@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
-import './EventFour.css';
+import './EventEight.css';
 
 
 
@@ -9,31 +9,29 @@ import './EventFour.css';
 
 
 
-class EventFour extends Component {
+class EventEight extends Component {
     state = {  }
     render() { 
         return ( 
             <div className="selectedevents">
             
-          <div className="lakersgame">
+          <div className="raidersgame">
            <img src=" picture url " alt="first event" height="42" width="42"/>
           </div>
 
-          
-          <div className="eventitle">Lakers vs Celtics</div>
+          <div className="eventitle">Las Vegas Raiders Vs Denver Broncos</div>
           <div className="pickupdropoff">
             Street:
             City:
             Zip:
           </div>
           <div className="venue">
-            Venue: Staples Center- Los Angeles,CA
+            Venue: Las Vegas Stadium - Las Vegas, NV
           </div> 
           {/* googlemap location  */}
           <div className="datetime">
             Saturday 11,2018
-          </div>  
-
+          </div>
 
           <div className="eventinfo">
             <p>
@@ -71,7 +69,7 @@ class EventFour extends Component {
     }
 }
  
-export default EventFour; 
+export default EventEight; 
 
 
 
