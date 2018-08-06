@@ -17,7 +17,7 @@ class EventOne extends Component {
             <div className="selectedevents">
             
                   <div className="belltorfight">
-                    <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/src/images/joeydavis.jpg " alt="first event" height="100" width="100"/>
+                    <img src="  " alt="first event" height="100" width="100"/>
                   </div>
             </div>
                     <div className="eventTitle">

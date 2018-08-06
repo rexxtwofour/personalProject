@@ -16,7 +16,7 @@ class EventTwo extends Component {
             <div className="selectedevents">
             
           <div className="edclv2018">
-           <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/src/images/edc-stages-basspod-gallery-2-1080x7201.jpg" alt="first event" height="42" width="42"/>
+           <img src=" " alt="first event" height="42" width="42"/>
           </div>
           
           <div className="eventitle">EDC Las Vegas 2018</div>

@@ -73,7 +73,16 @@
 }
 
 
+.editbutton{
+    font-size: 20px;
+    background-color: gold;
+}
 
+.deletebutton {
+    font-size: 20px;
+    background-color: goldenrod;
+
+}
 
 
 

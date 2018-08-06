@@ -128,7 +128,7 @@ displayCreatedEvent = () => {
 
 
 
-deleteInventory = (id) => {
+deleteEventInformation = (id) => {
     axios.delete(`/api/eventInformationdelete/${id}`).then(results => {
         console.log('showing if delete events', results)
     }).catch(error => {
@@ -158,7 +158,7 @@ deleteInventory = (id) => {
                         <div className="datetimedynamic"> {e.datetime}</div>
                         <div className="locationdynamic">  {e.location}</div>
                         <div className="eventcommentsdynamic">{e.eventcomments}</div>
-                    <button className="deletebutton"  onClick={() => this.editEventInformation(e.id)}>Edit</button>
+                    <button className="editbutton"  onClick={() => this.editEventInformation(e.id)}>Edit</button>
                         <input onChange={this.editHandler}/>
                     <button className="deletebutton" onClick={() => this.deleteEventInformation(e.id)}>Delete</button>
                         </div>
@@ -183,13 +183,20 @@ deleteInventory = (id) => {
             <input onChange={e => this.handleChange( 'location', e.target.value)}className="location" placeholder="location"></input>
             <input onChange={e => this.handleChange( 'eventcomments', e.target.value)}className= "eventComments"placeholder="eventcomments"></input>
             <button onClick={ this.createEvent}className="submit">Submit</button>
-                   
+
+
+            {/* added these two in, don't know if they will work correctly */}
+            <button onClick={ this.editEventInformation}className="editInfo">Edit</button>
+            <button onClick={ this.deleteEventInformation}className="deleteInfo">delete</button>
+
+
             <div className="display">
 
                 { event }
           
                 </div>
 
+                   
 
 
 
@@ -202,10 +209,10 @@ deleteInventory = (id) => {
 }
 
 //something goes in the render method to show the displayed event 
+//add created events to the bottom of the page
 
 
 
 export default CreateEvent;
 
 
-//add created events to the bottom of the page

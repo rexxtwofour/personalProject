@@ -31,35 +31,35 @@ class Events extends Component {
                 <div className="events">
             
               
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventOne.js">
+                 <a href="./EventOne">
                  <img src={bellatormma} className="bellatormma" width="370" height="300" alt="bellatormma"/>
                  </a>
 
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventTwo.js">
+                 <a href="./EventTwo">
                  <img src={edclv2018} className="edclv2018"  width="370" height="300" alt="edclv2018"/>
                  </a>
 
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventThree.js">
+                 <a href="./EventThree">
                  <img src={lakings} className="lakings" width="370" height="300" alt="lakings"/>
                  </a>
 
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventFour.js">
+                 <a href="./EventFour">
                  <img src={lakerslogo} className="lakerslogo" width="370" height="300" alt="lakerslogo"/>
                  </a>
 
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventFive.js">
+                 <a href="./EventFive">
                  <img src={ramslogo}  className="ramslogo" width="370" height="300" alt="ramslogo"/>
                  </a>
 
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventSix.js">
+                 <a href="./EventSix">
                  <img src={dodgerslogo}  className="dodgerslogo" width="370" height="300" alt="dodgerslogo"/>
                  </a>
 
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventSeven.js">
+                 <a href="./EventSeven">
                  <img src={ninerslogo} className="ninerslogo" width="370" height="300" alt="ninerslogo"/>
                  </a>
 
-                 <a href="/Users/ericrivera/devmtn/week6/wstransit_personal/src/components/Events/SelectedEvents/EventEight.js">
+                 <a href="./EventEight">
                  <img src={raiderslogo} className="raiderslogo" width="370" height="300" alt="raiderslogo"/> 
                  </a>
                 
