@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import routes from './routes';
+// import SelectedEventRoutes from './selectedEventRoutes';
 
 
 
@@ -21,7 +22,7 @@ class App extends Component {
     
        <Navigation/>
       {routes()}
-    
+      {/* {SelectedEventRoutes()} */}
   
 
       </div>

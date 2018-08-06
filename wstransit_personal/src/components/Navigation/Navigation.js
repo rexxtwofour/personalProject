@@ -14,37 +14,15 @@ export default function Navigation() {
     <input type="checkbox" className="navbutton" id="show-menu" role="button"/>
         <ul id="menu">
           
-        <Link to ="/">
-        <li><a href="/">Home</a></li>
-        </Link>
-
-        <Link to ="/CreateAccount">
-        <li><a href="/CreateAccount">Create Account</a></li>
-        </Link>
-
-         <Link to ="/Events">
-        <li><a href="/Events">Events</a></li>
-        </Link>
-
-
-        <Link to ="/CreateEvent">
-        <li><a href="/CreateEvent">Create Event</a></li>
-        </Link>  
-          
         
-        <Link to ="/EventReviews">
-        <li><a href="/EventReviews">Event Reviews</a></li>
-        </Link>
-
-        
-        <Link to ="/PaymentSetup">
-        <li><a href="/PaymentSetup">Payment Setup</a></li>
-        </Link>
-        
-        
-        <Link to ="/Contact"> 
-        <li><a href="/Contact">Contact</a></li>
-        </Link>  
+        <li><Link to ="/">Home </Link></li>
+        <li><Link to ="/CreateAccount">Create Account</Link></li>
+        <li><Link to ="/Events">Events</Link></li>
+        <li><Link to ="/CreateEvent">Create Event</Link></li>
+        <li><Link to ="/EventReviews">Event Reviews</Link></li>
+        <li> <Link to ="/PaymentSetup">Payment Setup</Link></li>
+        <li><Link to ="/Contact"> Contact</Link> </li>
+         
      
        
     </ul>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import './EventTwo.css';
-
+// import edc-stages-basspod-gallery-2-1080x7201from '/Users/ericrivera/devmtn/week6/wstransit_personal/src/images/edc-stages-basspod-gallery-2-1080x7201.jpg';
 
 
 
@@ -16,7 +16,7 @@ class EventTwo extends Component {
             <div className="selectedevents">
             
           <div className="edclv2018">
-           <img src=" picture url " alt="first event" height="42" width="42"/>
+           <img src="/Users/ericrivera/devmtn/week6/wstransit_personal/src/images/edc-stages-basspod-gallery-2-1080x7201.jpg" alt="first event" height="42" width="42"/>
           </div>
           
           <div className="eventitle">EDC Las Vegas 2018</div>
