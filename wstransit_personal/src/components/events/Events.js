@@ -13,7 +13,7 @@ import ninerslogo from '../../images/niners.png';
 import raiderslogo from '../../images/raiderslogo.png';
 
 
-//setup up links to go to selected events pages 
+
 //collect photos and information to be displayed on those pages
 
 class Events extends Component {
@@ -35,8 +35,8 @@ class Events extends Component {
                  <img src={bellatormma} className="bellatormma" width="370" height="300" alt="bellatormma"/>
                  </a>
 
-                 <a href="./EventTwo">
-                 <img src={edclv2018} className="edclv2018"  width="370" height="300" alt="edclv2018"/>
+                 <a href ="./EventTwo">
+                 <img src={edclv2018} className="edclv2018picture" width="370" height="300" alt="edclv2018"/>
                  </a>
 
                  <a href="./EventThree">

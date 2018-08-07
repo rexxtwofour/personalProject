@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import './paymentsetup.css';
+import Crypto from './Crypto';
 
 export default class PaymentSetup extends Component {
   render() {
@@ -80,7 +81,7 @@ export default class PaymentSetup extends Component {
 
         </div>
 
-
+<Crypto/>
 
 
       </div>
