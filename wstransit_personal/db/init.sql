@@ -19,7 +19,7 @@ create table users (
 --     ,location text not null
 --     ,datetime text not null
 --     ,pickupanddrop location
---);
+--sel);
 
 
 create table posts (

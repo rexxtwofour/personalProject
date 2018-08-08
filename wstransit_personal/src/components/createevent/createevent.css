@@ -22,11 +22,6 @@
 
 
 
-.eventComments {
-    width:200px;
-    height: 150px;
-    text-align:left;
-}
 
 
 .fullname{
@@ -35,36 +30,51 @@
 
 .street{
     font-size: 20px;
+    margin:5px;
 }
 
 .city{
     font-size: 20px;
+    margin:5px;
 }
 
 .zip{
     font-size: 20px;
+    margin:5px;
 }
 
 .phone{
     font-size: 20px;
+    margin:5px;
 }
 
 .email{
     font-size: 20px;
+    margin:5px;
 }
 
 .datetime{
     font-size: 20px;
+    margin:5px;
     /* width: 250px; */
 }
 
 .location {
     font-size: 20px;
     width: 250px;
+    margin:5px;
 }
 
-.submit{
+.eventComments {
+    width:200px;
+    height: 150px;
+    text-align:left;
+    margin:5px;
+}
+
+.submitEvent{
     font-size: 20px;
+    background-color: gold;
 }
 
 
@@ -73,12 +83,12 @@
 }
 
 
-.editbutton{
+.editInfo{
     font-size: 20px;
     background-color: gold;
 }
 
-.deletebutton {
+.deleteInfo {
     font-size: 20px;
     background-color: goldenrod;
 
@@ -98,10 +108,95 @@
 
 }
   
-  @media(max-width: 700px){
+  @media(max-width: 950px){
     .createEventTitle {  
         font-size: 40px;
         margin-top: 40px;
     }
+
+
+    .fullname{
+        width: 200px;
+    }
+    
+    .street{
+        width: 200px;
+    }
+    
+    .city{
+        width: 200px;
+    }
+    
+    .zip{
+        width: 200px;
+    }
+    
+    .phone{
+        width: 200px;
+    }
+    
+    .email{
+        width: 200px;
+    }
+    .datetime{
+        font-size: 15px;
+        margin:5px;
+        width: 200px;
+    }
+   
+    .location{
+        width: 80%;
+    }
+
+    
+    .eventComments {
+        width: 200px;
+    }
+    
+    @media(max-width : 730px){
+        .fullname{
+            width: 80%;
+        }
+        
+        .street{
+            width: 80%;
+        }
+        
+        .city{
+            width: 80%;
+        }
+        
+        .zip{
+            width: 80%;
+        }
+        
+        .phone{
+            width: 80%;
+        }
+        
+        .email{
+            width: 80%;
+        }
+        .datetime{
+           
+            width: 80%;
+        }
+       
+        .location{
+            width: 80%;
+        }
+    
+        
+        .eventComments {
+            width: 80%;
+        }        
+
+
+
+
+
+  
+  
+  } 
     
 }

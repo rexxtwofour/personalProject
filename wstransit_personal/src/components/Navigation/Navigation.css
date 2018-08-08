@@ -1,7 +1,7 @@
 
 
 nav {
-    width: 500px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
@@ -13,6 +13,7 @@ ul {
   margin:0;
   padding:0;
   position: absolute;
+  
 }
 
 li {
@@ -23,7 +24,7 @@ li {
 
 li a {
   display:block;
-  min-width: 16em;
+  min-width: 12vw;
   height: 50px;
   text-align: center;
   line-height: 50px;
@@ -32,6 +33,7 @@ li a {
   background: #d3a625;
   text-decoration: none;
   margin-top: 5px;
+  margin-right: 10px;
 }
 
 li:hover a {
@@ -94,7 +96,7 @@ input[type=checkbox]:checked ~ #menu{
   }
 
   ul li, li a {
-    min-width: 85vw;
+    min-width: 60vw;
    
      
   }
@@ -112,10 +114,32 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 
-@media(max-width : 680px){
+@media(max-width : 950px){
     .navbutton{
-      min-width: 50vw ;
+      min-width: 30vw ;
     }
+    .show-menu {
+      /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-decoration: none;
+      color: #4f5b66;
+      background: #d3a625; */
+      /* text-align: center;
+      padding: 10px 0;
+      display: none; */
+      min-width: 80vw ;
+    }
+  }
+
+    @media(max-width : 730px){
+      .navbutton{
+        min-width: 18vw ;
+      }
+      .show-menu {
+        min-width: 30vw ;
+
+      }
+
+
 } 
 
 

@@ -17,73 +17,129 @@ height: 60vh;
     padding-top: 80px;
     font-size: 50px;
 }
-/* 
-.fullname {
 
+.fullname {
+    margin: 5px;
+    align-self: auto;
 }
 
 .address {
-
+    margin: 5px;
+    align-self: auto;
 }
 
 .city {
-
+    margin: 5px;
+    align-self: auto;
 }
 
 .zip {
-
+    margin: 5px;
+    align-self: auto;
 }
 
 .country{
-
-} */
+    margin: 5px;
+    align-self: auto;
+} 
 
 .creditcardinfo {
     font-size: 40px;
+    align-self: auto;
 }
 
-/* 
+ 
 .creditcardnumber {
-
+    margin: 5px;
+    align-self: auto;
 }
 
 .cvvnumber {
-
+    margin: 5px;
+    align-self: auto;
 }
 
 .cardholdername {
-
+    margin: 5px;
+    align-self: auto;
 }
 
 expirationdate {
-
-} */
-
-
-
+    margin: 5px;
+    align-self: auto;
+} 
 
 
-@media(max-width: 1599px){
-    .payment  {  
-      font-size: 70px;
-  }
-
-}
 
 
-@media(max-width: 700px){
-    .payment  {
-        margin-top: 20px;
-        font-size: 50px;
+
+
+    
+    @media(max-width: 1599px){
+        .payment  {  
+          font-size: 70px;
+      }
+
+      .billinginfo {
+        
     }
     
-    .billinginfo {
-        margin-top: 20px;
-        padding-top: 50px;
-        font-size: 50px;
+    .fullname {
+     margin: 5px;
+    }
+    
+    .address {
+        margin: 5px;
+    }
+    
+    .city {
+        margin: 5px;
+    }
+    
+    .zip {
+        margin: 5px;
+    }
+    
+    .country{
+        margin: 5px;
+    } 
+    
+    .creditcardinfo {
+        margin-top: 15px;
+        margin-bottom: 5px;
+
+    }
+    
+    
+    .creditcardnumber {
+        margin: 5px;
+    }
+    
+    .cvvnumber {
+        margin: 5px;
+    }
+    
+    .cardholdername {
+        margin: 5px;
+    }
+    
+    expirationdate {
+        margin: 5px;
+    } 
+
+
+
+    @media(max-width: 700px){
+        /* .payment  {
+            
+        }
+        
+        .billinginfo {
+          
+        } */
+
+
     }
 
-
-
-
 }
+

@@ -14,12 +14,9 @@ let id = 1;
 const app = express();
 
 
-
-
-
 //  //middleware
-const checkForSession = require('./middleware/checkForSession');
-
+// const checkForSession = require('./middleware/checkForSession');
+// console.log(checkForSession.sessionCheck() + '')
 
 app.use( bodyParser.json() );
 app.use( session({
@@ -27,13 +24,11 @@ app.use( session({
     resave: false, 
     saveUninitialized: true
 }));
-app.use( checkForSession );
+
 app.use( express.static( `${__dirname}/build` ) );
 
 // //AUTH
 // app.post( '/api/login', auth_controller.login );
-
-
 
 app.use(bodyParser.json());
 
@@ -46,9 +41,14 @@ massive(process.env.CONNECTION_STRING).then(database => {
     console.log('There was an error connecting to db', db);
 })
 
+app.post('/login', ctrl.login)
+
+// app.use( ctrl.sessionCheck);
+
 app.post('/api/addcreateEvent',ctrl.createEvent)
 
 app.get('/api/userEvents',ctrl.userEvents)
+app.get('/api/eventInformationInventory',ctrl.read)
 
 
 
@@ -99,15 +99,9 @@ app.delete('/api/eventInformationdelete/:id', (req, res) => {
   })
 })
 
-
-
-
-
-
-
-
-
-
+app.get('/userdata', ctrl.sessionCheck, (req, res) => {
+      res.send(req.session.users)
+})
 
 
 const path = require('path')
@@ -115,52 +109,23 @@ app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '../build/index.html'));
 })
 
-
-
-
-
-
-
-
-
 //BCrypt
 
 
-module.exports = {
+// module.exports = {
 
-    login: 
-        app.post('/login', (req, res) => {
-            const { username, password } = req.body;
-            app.get('db').find_users([username]).then(users => { 
-              if(user.length){
-                console.log(users)
-                const {id, name, email } = users[0];
-          // Use bcrypt.compare to compare the entered password with the hashed password.
-                bcrypt.compare(password, users[0].password).then(passwordMatch => {
-                  if(passwordMatch){
-                    req.session.users = { id, name ,email, }
-                    res.status(200).send( req.session.users )
-                  } else {
-                    res.send({error: 'Wrong Username or Password'})
-                  }
-                }).catch(err => console.log('Login 1', err))
-              } else {
-                res.send({error: 'No User Found'})
-              }
-            }).catch(() => res.status(403).send({error: 'Something went wrong. Please try again.'}))
-          }),
     
     
     
-    register:
+    // register:
           app.post('/register', (req, res) => {
             console.log(req.body)
-            const { name, email, password } = req.body;
+            const { fullname, email, password } = req.body;
           //bcrypt.hash is what hashes the password. This needs to be done before inserting into the database.
             bcrypt.hash( password, numOfSaltRounds ).then( hashedPassword => {
               console.log(hashedPassword)
           //create user sql file will be an insert statemetent with a RETURNING * at the end
-              req.app.get('db').create_user([name, email, hashedPassword]).then(users => {/* instead of using {} in the create user, use [] because {} assumes 1 item */
+              req.app.get('db').create_user([fullname, email, hashedPassword]).then(users => {/* instead of using {} in the create user, use [] because {} assumes 1 item */
                 console.log('users!',users)
                 req.session.user = users;
                 res.status(200).send(req.session.users)
@@ -171,45 +136,16 @@ module.exports = {
             })
           }),
     
-    logout: 
+    // logout: 
     
     app.post('/logout', (req, res) => {
         req.session.destroy();
         res.status(200).send();
       })
     
-}
-
-
-
-
-
-
+// }
 //login button and input
 //already a user log in here.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const PORT = 4000;
 app.listen(PORT, () => {console.log(`server is up and running ${PORT}`)});

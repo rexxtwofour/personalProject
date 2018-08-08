@@ -5,31 +5,33 @@
     padding: 100px;
 }
 
-.eventReviewComments {
-    height:200px;
-    width:400px;
-}
-
-
-
 .submitReview{
     font-size: 30px;
     background-color: goldenrod;
 
 }
 
-.eventText {
+.reviewsText{
     font-size: 90px;
     color: gold;
-    margin-top: 120px;
+    padding-top: 120px;
+    
 }
 
 .eventName {
  font-size:20px;
+ margin:5px;
 }
 
 .postTitle {
     font-size:20px;
+    
+}
+
+.eventReviewComments {
+    height:200px;
+    width:400px;
+    margin:5px;
 }
 
 
@@ -41,17 +43,19 @@
 
 
 @media(max-width: 1599px){
-    .eventText {  
+    .reviewsText {  
       font-size: 70px;
+      padding-top: 80px;
   }
 
 }
 
 
-  @media(max-width: 700px){
-    .eventText {
+  @media(max-width: 950px){
+    .reviewsText {
         margin-top: 20px;
         font-size: 50px;
+        padding-top: 40px;
     }
 
     .eventreviews {
@@ -69,4 +73,27 @@
     }
     
 
-  }
+  @media(max-width: 950px){
+    .eventreviews {
+        margin:2px;
+    }
+
+    .eventReviewComments {
+        height:200px;
+        width:85%;
+    }
+  
+    .eventName {
+       width:95%;
+       
+    }
+       
+    .postTitle {
+        width:95%; 
+           
+       
+    }
+
+
+    }
+}

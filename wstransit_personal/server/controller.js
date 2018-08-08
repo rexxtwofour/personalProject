@@ -1,8 +1,10 @@
+const bcrypt = require('bcrypt');
 let id =0;
 let eventinformation = []
 
 module.exports = {
 
+    
 
 //user events 
 createEvent:  (req, res) => {
@@ -22,31 +24,53 @@ createEvent:  (req, res) => {
 },
 
 read:(req, res) => {
-    res.status(200).send(eventinformation)
+    // req.session.user.id 
+    //.read_event(1)
+    console.log('session',req.session)
+    //added to read, needs to be checked
 
+    /****************************** USE THE BELOW FUNCTION ONCE YOU HAVE SESSION ***************/
+    // req.app.get('db').read_event([ user_id, fullname, street, city, zip , phone,email, datetime, location, eventcomments])
+    //     .then((response) => {
+    //     // console.log('session error',session)
+    //     res.status(200).json(response)
+    // })
+    // .catch( error => {
+    //     console.log(error)
+    //     res.status(500).send({errorMessage: " there was a read issue"});
+    // })
+    /****************************** USE THE ABOVE FUNCTION ONCE YOU HAVE SESSION ***************/
 },
-
+//console.log all
 update: (req, res) => {
     const{ user_id,fullname, street, city, zip, phone, email, datetime, location, eventcomments}=req.body;
+    // console.log('update id',user_id)
     const eventinformationId = req.params.id
-    const eventinformationIndex = eventinformation.findIndex( eventinformation => eventinformation.id == eventinformationId)
-    let eventinformation = eventinformation[eventinformationIndex];
-
-    eventinformation[ eventinformationIndex ] = {
-        user_id: user_id || eventinformation.user_id,
-        fullname: fullname || eventinformation.fullname,
-        street: street || eventinformation.street,
-        city: city || eventinformation.city,
-        zip: zip || eventinformation.zip,
-        phone: phone || eventinformation.phone,
-        email: email || eventinformation.email,
-        datetime: datetime || eventinformation.datetime,
-        location: location || eventinformation.location,
-        eventcomments: eventcomments || eventinformation.eventcomments,
+                    // const eventinformationIndex = eventinformation.findIndex( eventinformation => eventinformation.id == eventinformationId)
+                    // let eventinformation = eventinformation[eventinformationIndex];
+//console.log the object
+//get rid of eventinfo for db instantance
+    eventinformation= {
+        user_id: user_id ,
+        fullname: fullname ,
+        street: street ,
+        city: city ,
+        zip: zip ,
+        phone: phone ,
+        email: email ,
+        datetime: datetime ,
+        location: location ,
+        eventcomments: eventcomments ,
     }
-    req.app.get('db').update_event
+    req.app.get('db').update_event(...eventinformation).then( response => {
+        // console.log('checking eventinfomation object',eventinformation)
+        // res.status(200).send(eventinformation);
+        // 'send response
 
-    res.status(200).send(eventinformation);
+    })
+
+
+   
 },
 
 
@@ -63,11 +87,44 @@ delete: (req, res) => {
 },
 userEvents: (req, res) => {
     //putstuffhere
-}
+},
+sessionCheck: (req, res, next) => {
+    if (req.session.users) {
+        console.log('sessionCheck', req.session.users)
+      return next();
+    } else {
+        console.log('no user')
+     res.json({ message: 'You are not authorized' });
+    }
+},
 
-}
+login: (req, res) => {
+            const { fullname, password } = req.body;
+            console.log('checking the username and password',fullname, password)
+            req.app.get('db').find_login(fullname).then(users => { 
+                console.log('1', users)
+              if(users.length){
+                console.log('2', users)
+                const {id, fullname } = users[0];
+                console.log(id, fullname)
+          // Use bcrypt.compare to compare the entered password with the hashed password.
+                bcrypt.compare(password, users[0].password).then(passwordMatch => {
+                    console.log('3', passwordMatch)
+                  if(passwordMatch){
+                    req.session.users = { id, fullname ,password }
+                    res.status(200).send( req.session.users )
+                  } else {
+                    res.send({error: 'Wrong Username or Password'})
+                  }
+                }).catch(err => console.log('Login 1', err))
+              } else {
+                res.send({error: 'No User Found'})
+              }
+            }).catch(() => res.status(403).send({error: 'Something went wrong. Please try again.'}))
+          },
+    
 
-
+        }
 
 
 // createUsersAccount :  (req, res) => {

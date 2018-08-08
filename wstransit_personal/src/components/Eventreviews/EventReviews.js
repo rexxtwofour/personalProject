@@ -53,7 +53,7 @@ class EventReviews extends Component {
 
             <div>
 
-            <div className="eventText">Event Reviews</div>                
+            <div className="reviewsText">Event Reviews</div>                
 
             <div className="eventreviews">
                 

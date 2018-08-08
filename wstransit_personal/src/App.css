@@ -5,8 +5,10 @@
 
 .App-header {
   background-color: rgb(48, 51, 51);
-  height: 190vh;
-  width: 100% vw;
+  /* height: 100% vh; */
+  height: 100% vh;
+  /* width: 100% vw; */
+  width: 100%vh;
   padding: 20px;
-  color: white;
+  /* color: white; */
 }

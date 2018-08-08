@@ -13,6 +13,13 @@ padding-top: 100px;
 }
 
 
+.loginAccount {
+    font-size: 30px;
+    background-color: goldenrod;
+    
+}
+
+
 .createAccount {
     font-size: 90px;
     color: gold;

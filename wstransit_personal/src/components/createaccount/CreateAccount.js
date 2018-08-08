@@ -18,11 +18,13 @@ class CreateAccount extends Component {
             password: '',
         }
         this.registerAccount = this.registerAccount.bind(this)
+        this.loginAccount = this.loginAccount.bind(this)
     }
 
 
     handleChangeFullName = (e) => {
-        this.setState({ name: e.target.value})
+        console.log(e.target.value)
+        this.setState({ fullname: e.target.value})
     }
 
     handleChangeEmail = (e) => {
@@ -46,8 +48,23 @@ registerAccount(){
         })
 }
 
+loginAccount(){
+    axios.post('/login', this.state)
+        .then( loginUser => {
+            console.log(loginUser)
+        })
+        .catch( err => {
+            console.log(err)
+        })
+}
+
+
+
+
+//login method, add button, make sure to hit login in endpoint, send username and password to match bcrypt
 //make sure to add functionality to the register button 
     render() { 
+        console.log(this.state)
         return (  
            <div> 
 
@@ -56,12 +73,19 @@ registerAccount(){
             <div className="accountpage">
                 <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
                 <input onChange={this.handleChangeEmail} className="email" placeholder="email"/>
-                <input onChange={this.handleChangePassword}className="password"  placeholder="password"/>
-
+                <input onChange={this.handleChangePassword}className="password"  placeholder="password" type="password"/>
                 <button onClick={this.registerAccount} className="registerAccount">Register</button>
+            <div className="loginSection">
             
+            
+                <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
+                <input onChange={this.handleChangePassword}className="password"  placeholder="password" type="password"/>
+                <button onClick={this.loginAccount} className="loginAccount">Login!</button>
             
             </div>
+            </div>
+
+
 
         </div>
 

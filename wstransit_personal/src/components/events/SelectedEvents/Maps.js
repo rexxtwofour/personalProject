@@ -1,7 +1,7 @@
 
 import React,{ Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-// import 'Maps.css';
+import './Maps.css';
 
 
 
@@ -41,33 +41,37 @@ export class MapContainer extends Component {
 
    
      return (
-   
+      
        <div className="mapsize">
-       
+     
      <Map
        google={this.props.google}
+ //added these four lines but i still don't see the sizing of the map change      
+       googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+       loadingElement={<div style={{ height: `100%` }} />}
+       containerElement={<div style={{ height: `400px` }} />}
+       mapElement={<div style={{ height: `100%` }} />}
    
        initialCenter={{
-         lat: 40.7128,
-         lng: -74.0060
+         lat: 34.0522,
+         lng: -118.2437
        }}
        zoom={10}
        onClick={this.onMapClicked}
-
+       
      >
+
      <Marker onClick={this.onMarkerClick}
                name={'Current location'} />
        <Marker
-         title={'Sunshine State'}
-         name={'Miami'}
-         position={{ lat:34.0522 , lng:-118.2437 }} />
-       <Marker
-         name={''}
+         title={'the big city'}
+         name={'NYC'}
+         position={{ lat:40.7128, lng:-74.0060, }} />
+       {/* <Marker
+         name={'Silicon Valley'}
          position={{lat: 37.759703, lng: -122.428093}} />
-       <Marker />
+       <Marker /> */}
        <Marker
-
-   
 />
 
    
