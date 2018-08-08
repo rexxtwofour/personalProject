@@ -18,7 +18,7 @@ ul {
 
 li {
   display:inline-block;
-  float: left; 
+  /* float: left;  */
   margin-right: 5px;
 }
 

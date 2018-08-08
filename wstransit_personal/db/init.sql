@@ -6,7 +6,7 @@ drop table if exists userEvents;
 
 
 create table users (
-    ,id serial primary key
+    id serial primary key
     ,fullname text not null
     ,email text not null
     ,password text not null
@@ -56,21 +56,43 @@ create table userEvents (
 
 insert into users ( fullname, email, password )
 values ('Kate', 'disneyprincess@gmail.com', 'flyhigh' ); 
+//id: 15
+//$2b$12$cEoy/LP6E.q9/RHMOPQ0DOZ/7o2Lhrl3H1.EwHYl2WT.mEFU13I8G
+//1 'Kate'
+//3 false
+
+
 
 insert into users ( fullname, email, password )
 values ('Jeremy','bigdog78@yahoo.com', 'ruffruff' ); 
+//id: 16
+//$2b$12$kFmHDvSDCRdqOe5GQsQlueI9vsWSFIQ8/HpYzI8P2im/N9yCCWX7q
+
 
 insert into users ( fullname, email, password )
 values ('Ricky','rickysticky@gmail.com', 'pickupsticks'); 
+//id: 17
+//$2b$12$nkJchCaulFJ43CvjK4K0.OAiklHD2L3A6tYWIJoIjProwZ3uwnSxy
+
 
 insert into users ( fullname, email, password )
-values ('Herb','birdistheword@yahoo.com', 'thelovebug55'); 
+values ('Herb','birdistheword@yahoo.com', 'thelovebug55');
+//id: 18
+//$2b$12$zNOzjNB1IlWfG.bjKjlWw.Z6gviXnKb2mcEEubHIURyHRLw8VuPNa
+
+
 
 insert into users ( fullname, email, password )
 values ('Debbie','thelittlehostess@yahoo.com', 'cupcakequeen'); 
+//id: 19
+//$2b$12$aPA0F/PHn7dF/CnYoqba5OMyPGEDTM0Nyr0roUF1Phn8Kh.qr4Ro6
+
 
 insert into users ( fullname, email, password )
 values ('Kent','gokentstate@yahoo.com', 'outinthehills' ); 
+//id: 20
+//$2b$12$MfxPZgHs4RgF/TcscCRPe..oHimtHvmov4.IA8gTZ7/z939VySQ76
+
 
 
 
