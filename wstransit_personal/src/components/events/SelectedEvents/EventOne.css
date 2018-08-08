@@ -1,4 +1,4 @@
-.selectedevents {
+/* .selectedevents {
     width: 800px;
     height: 100vh; 
     display: block;
@@ -6,19 +6,22 @@
     margin-right: auto;
     /* width: 40%; */
     
-}
+ */
 
 
 .bellatorfight {
-    background-color: aqua;
-    width: 100%;
-    height: 700px;
-    margin-top: 90px;   
+    /* width: 80%;
+    height: 10em; */
+    width: 700px;
+    height: 600px;
+    margin-top: 400px;  
 }
+
 
 
 .eventTitle {
     background-color: transparent;
+    color: goldenrod;
     padding: 2%;
     font-size: 90px;
     text-align: center;
@@ -32,17 +35,20 @@
 
 
 .rideinfo {
-    background-color: black;
+    background-color:transparent;
+    color: #eeff00;
     padding: 2%;
     font-size: 30px;
     text-align: left;
     width: 90%;
+   
     
 }
 
 
 .fightdatetime {
-    background-color: black;
+    background-color: transparent;
+    color: #eeff00;
     padding: 2%;
     font-size: 50px;
     height: 80px;
@@ -54,12 +60,20 @@
 
 
 .bellatorparagraph {
-    background-color: purple;
+    background-color: transparent;
+    color: goldenrod;
     width: 80%;
     padding: 2%;
     height: 5 em;
-    margin-top: 10px;
+    margin-top: 150px;
     font-size: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.mapstyle {
+    width:200px;
+    height: 200px;
+    
 }

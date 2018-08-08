@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
-// import './EventOne.css';
-// import joeydavis from '/Users/ericrivera/devmtn/week6/wstransit_personal/src/images/joeydavis.jpg';
+import './EventOne.css';
+import joeydavis from '../../../images/joeydavis.jpg';
 import MapContainer from './Maps';
 
 
@@ -14,12 +14,12 @@ class EventOne extends Component {
     render() { 
         return ( 
            <div>
-            <div className="selectedevents">
+            {/* <div className="selectedevents"> */}
             
                   <div className="bellatorfight">
-                    <img src="  " alt="first event" height="100" width="100"/>
+                    <img src={joeydavis} alt="firstevent"/>
                   </div>
-            </div>
+            {/* </div> */}
                     <div className="eventTitle">
                     Bellator 55
                     </div>
@@ -40,8 +40,12 @@ class EventOne extends Component {
                   </div>        
 {/* this is where the googlemap api goes */}
 
+<div className="mapstyle">
+ <MapContainer/> 
 
-<MapContainer/>
+
+</div>
+
 
                <div className="bellatorparagraph">
                 

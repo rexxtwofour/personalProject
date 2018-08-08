@@ -107,6 +107,8 @@ input[type=checkbox]:checked ~ #menu{
       margin-right:20px;
      
   } 
+ 
+
 
 
 
@@ -115,25 +117,21 @@ input[type=checkbox]:checked ~ #menu{
 
 
 @media(max-width : 950px){
-    .navbutton{
+    /* .navbutton{
       min-width: 30vw ;
-    }
+    } */
     .show-menu {
-      /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-decoration: none;
-      color: #4f5b66;
-      background: #d3a625; */
-      /* text-align: center;
-      padding: 10px 0;
-      display: none; */
-      min-width: 80vw ;
+      min-width: 40vw ;
+
     }
-  }
+
+    }
+  
 
     @media(max-width : 730px){
-      .navbutton{
+      /* .navbutton{
         min-width: 18vw ;
-      }
+      } */
       .show-menu {
         min-width: 30vw ;
 

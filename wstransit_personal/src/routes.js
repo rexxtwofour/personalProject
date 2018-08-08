@@ -6,7 +6,7 @@ import Events from './components/Events/Events';
 import EventReviews from './components/Eventreviews/EventReviews';
 import PaymentSetup from './components/Paymentsetup/PaymentSetup';
 import Home from './components/Home/Home';
-import SelectedEvents from './components/Selectedevent/SelectedEvent';
+
 import Contact from './components/Contact/Contact';
 
 
@@ -30,7 +30,6 @@ export default function Routes (){
         <Route component={ Events } path="/Events"/>
         <Route component={ EventReviews } path="/EventReviews" />
         <Route component={ PaymentSetup } path="/PaymentSetup"/>
-        <Route component={ SelectedEvents } path="/SelectedEvents"/>
         <Route component={ Contact } path="/Contact"/>
 
 

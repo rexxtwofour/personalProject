@@ -78,9 +78,6 @@
 }
 
 
-.dynamics {
-    margin-top:100px;
-}
 
 
 .editInfo{
@@ -92,6 +89,13 @@
     font-size: 20px;
     background-color: goldenrod;
 
+}
+
+
+/* this is where well style the rendered events */
+
+.dynamics {
+    margin-top:100px;
 }
 
 

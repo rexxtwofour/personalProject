@@ -56,8 +56,8 @@ create table userEvents (
 
 insert into users ( fullname, email, password )
 values ('Kate', 'disneyprincess@gmail.com', 'flyhigh' ); 
-//id: 15
-//$2b$12$cEoy/LP6E.q9/RHMOPQ0DOZ/7o2Lhrl3H1.EwHYl2WT.mEFU13I8G
+//id: 1
+//$2b$12$g0XBWHfwT5syDQk0l.YVO.noJSaF0whgIU57MXhFlHZI5aHr9m19W
 //1 'Kate'
 //3 false
 
@@ -65,33 +65,33 @@ values ('Kate', 'disneyprincess@gmail.com', 'flyhigh' );
 
 insert into users ( fullname, email, password )
 values ('Jeremy','bigdog78@yahoo.com', 'ruffruff' ); 
-//id: 16
-//$2b$12$kFmHDvSDCRdqOe5GQsQlueI9vsWSFIQ8/HpYzI8P2im/N9yCCWX7q
+//id: 2
+//$2b$12$5JhKJy9YU3bO/0ICyzArFe4z1TVw//xWrsGgsQl9GB/jfDBDW1M.C
 
 
 insert into users ( fullname, email, password )
 values ('Ricky','rickysticky@gmail.com', 'pickupsticks'); 
-//id: 17
-//$2b$12$nkJchCaulFJ43CvjK4K0.OAiklHD2L3A6tYWIJoIjProwZ3uwnSxy
+//id: 3
+//$2b$12$yrHidhEVZ/c.5/Zli2ED1.3s.laVY5tDNxCW1Xp/74RuH3FyaHP2K
 
 
 insert into users ( fullname, email, password )
 values ('Herb','birdistheword@yahoo.com', 'thelovebug55');
-//id: 18
-//$2b$12$zNOzjNB1IlWfG.bjKjlWw.Z6gviXnKb2mcEEubHIURyHRLw8VuPNa
+//id: 4
+//$2b$12$3.SViqT//oWDm3PxYyW0je18oetxJIKFhDbKNQ7TMKWrFt.q9YdUu
 
 
 
 insert into users ( fullname, email, password )
 values ('Debbie','thelittlehostess@yahoo.com', 'cupcakequeen'); 
-//id: 19
-//$2b$12$aPA0F/PHn7dF/CnYoqba5OMyPGEDTM0Nyr0roUF1Phn8Kh.qr4Ro6
+//id: 5
+//$2b$12$TSzEkIMZlGTpudXy6dRWau5aESdJH9c/BKfePaxmhHL21siiGSe5i
 
 
 insert into users ( fullname, email, password )
 values ('Kent','gokentstate@yahoo.com', 'outinthehills' ); 
-//id: 20
-//$2b$12$MfxPZgHs4RgF/TcscCRPe..oHimtHvmov4.IA8gTZ7/z939VySQ76
+//id: 5
+//$2b$12$f/Jkp3GzI58xXE0T9xxzH.HdS0gJXEBQqyehMG87hNNGtm6oLgIhi
 
 
 
