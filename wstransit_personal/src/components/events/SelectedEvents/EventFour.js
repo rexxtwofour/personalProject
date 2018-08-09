@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import './EventFour.css';
-
-
+import hollywoodnightsLakers from '../../../images/hollywoodnightsLakers.png';
+import MapContainer from './Maps';
 
 
 
@@ -13,59 +13,54 @@ class EventFour extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className="selectedevents">
+          <div>
             
-          <div className="lakersgame">
-           <img src=" picture url " alt="first event" height="42" width="42"/>
+            
+          <div className="hollywoodnightsLakers">
+            <img src={hollywoodnightsLakers}  alt="fourth event" />
+          </div>
+          {/* height="42" width="42" */}
+
+          <div className="eventTitle4">
+           Lakers vs Warriors
           </div>
 
-          
-          <div className="eventitle">Lakers vs Celtics</div>
-          <div className="pickupdropoff">
-            Street:
-            City:
-            Zip:
+          <div className="rideinfo4">
+          <div className="pickupdropoff4">
+          <p>Pickup/Dropoff Location</p>
+          <p> Street: 1111 S Figueroa St</p>
+          <p>City:Los Angeles, CA</p>
+          <p>Zip:90015</p>
           </div>
-          <div className="venue">
-            Venue: Staples Center- Los Angeles,CA
+          
+          <div className="venue4">
+            Venue: Staples Center
           </div> 
           {/* googlemap location  */}
-          <div className="datetime">
-            Saturday 11,2018
-          </div>  
+          <div className="datetime4">
+            January 21st, 2019
+          </div>
+
+                      <div className="mapstyle4">
+                        <MapContainer/> 
 
 
-          <div className="eventinfo">
-            <p>
+                      </div>
+
+          <div className="lakersparagraph">
+            
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
-            </p>
+            
           </div>
             
             
-            </div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
+          </div>
 
          );
     }

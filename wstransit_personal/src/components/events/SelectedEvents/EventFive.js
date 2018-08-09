@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import './EventFive.css';
-
-
+import laRamsaction from '../../../images/laRamsaction.jpg';
+import MapContainer from './Maps';
 
 
 
@@ -13,60 +13,54 @@ class EventFive extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className="selectedevents">
+          <div>
             
-          <div className="ramsgame">
-           <img src=" picture url " alt="first event" height="42" width="42"/>
+            
+          <div className="laRamsaction">
+            <img src={laRamsaction}  alt="fifth event" />
+          </div>
+          {/* height="42" width="42" */}
+
+          <div className="eventTitle5">
+           Rams vs Cardinals
           </div>
 
-
-          <div className="eventitle">Rams vs Seahawks</div>
-          <div className="pickupdropoff">
-            Street:
-            City:
-            Zip:
+          <div className="rideinfo5">
+          <div className="pickupdropoff5">
+          <p>Pickup/Dropoff Location</p>
+          <p> Street: 3939 S. Figueroa St.</p>
+          <p>City:Los Angeles, CA</p>
+          <p>Zip:90037</p>
           </div>
-          <div className="venue">
-            Venue: Los Angeles Stadium-Inglewood,CA
+          
+          <div className="venue5">
+            Venue: Los Angeles Memorial Coliseum
           </div> 
           {/* googlemap location  */}
-          <div className="datetime">
-            Saturday 11,2018
+          <div className="datetime5">
+            November 11, 2018
           </div>
 
+                      <div className="mapstyle5">
+                        <MapContainer/> 
 
 
-          <div className="eventinfo">
-            <p>
+                      </div>
+
+          <div className="ramsparagraph">
+            
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
-            </p>
+            
           </div>
             
             
-            </div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
+          </div>
 
          );
     }

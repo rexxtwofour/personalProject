@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import './EventEight.css';
-
-
+import lvRaiders from '../../../images/lvRaiders.jpg';
+import MapContainer from './Maps';
 
 
 
@@ -13,57 +13,54 @@ class EventEight extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className="selectedevents">
+          <div>
             
-          <div className="raidersgame">
-           <img src=" picture url " alt="first event" height="42" width="42"/>
+            
+          <div className="lvRaiders">
+            <img src={ lvRaiders }  alt="eighth event"   height="500" width="1000" />
+          </div>
+       
+
+          <div className="eventTitle8">
+           Raiders vs Rams
           </div>
 
-          <div className="eventitle">Las Vegas Raiders Vs Denver Broncos</div>
-          <div className="pickupdropoff">
-            Street:
-            City:
-            Zip:
+          <div className="rideinfo8">
+          <div className="pickupdropoff8">
+          <p>Pickup/Dropoff Location</p>
+          <p> Street: 7000 Coliseum Way</p>
+          <p>City:Oakland, CA </p>
+          <p>Zip: 94621</p>
           </div>
-          <div className="venue">
-            Venue: Las Vegas Stadium - Las Vegas, NV
+          
+          <div className="venue8">
+            Venue: Oakland Coliseum
           </div> 
           {/* googlemap location  */}
-          <div className="datetime">
-            Saturday 11,2018
+          <div className="datetime8">
+           September 10, 2018
           </div>
 
-          <div className="eventinfo">
-            <p>
+                      <div className="mapstyle8">
+                        <MapContainer/> 
+
+
+                      </div>
+
+          <div className="raidersparagraph">
+            
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
-            </p>
+            
           </div>
             
             
-            </div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
+          </div>
 
          );
     }

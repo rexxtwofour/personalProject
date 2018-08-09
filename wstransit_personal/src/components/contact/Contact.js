@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import './contact.css';
-// import facebookvector from '../facebookvector.jpg';
-// import twittervector from '../twittervector.png';
-// import instagramvector from '../instagramvector.jpg';
+import facebooklogo from '../../images/facebooklogo.png';
+import twittervector from '../../images/twittervector.png';
+import newinstagramlogo from '../../images/newinstagramlogo.png';
 
 
 
@@ -25,6 +25,24 @@ class Contact extends Component {
 
         </div> 
 
+
+         <div className="socialmedia">
+
+                 <a href="https://www.facebook.com/WSTransit/">
+                 <img src={facebooklogo} className="facebook" width="300" height="200" alt="facebook"/> 
+                 </a>
+
+
+                 <a href="https://twitter.com/ws_transit">
+                 <img src={twittervector} className="twitter" width="300" height="200" alt="twitter"/> 
+                 </a>
+         
+                <a href="https://www.instagram.com/ws_transit/">
+                <img src={newinstagramlogo} className="instagram" width="300" height="200" alt="instagram"/> 
+                </a>
+     </div>
+
+
     
         </div>
 
@@ -39,12 +57,6 @@ class Contact extends Component {
 export default Contact;
 
 
-
-        // <div className="socialmedia">
-        //         <img src={facebookvector} width="50" height="50" alt="facebook"/> 
-        //         <img src={twittervector} width="50" height="50" alt="twitter"/> 
-        //         <img src={instagramvector} width="50" height="50" alt="instagram"/> 
-        // </div>
 
 
 

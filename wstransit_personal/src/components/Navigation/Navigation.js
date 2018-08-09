@@ -1,18 +1,35 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom'
 import './Navigation.css';
 
 
-export default function Navigation() {
+export default class Navigation extends Component {
+    constructor(){
+        super()
+        this.state = {
+            toggle: false
+        }
+    }
+
+
+    toggleMenu = () => {
+        this.setState((prevState)=> {
+            return {
+                toggle: !prevState.toggle
+            }
+        })
+    }
+
+    render(){
     return(
-        <div>
+        <div className='nav-container'>
 
 
     <nav>
     <div>
-    <label className="show-menu">Navigation</label>
-    <input type="checkbox" className="navbutton" id="show-menu" role="button"/>
-        <ul id="menu">
+    <div onClick={()=> this.toggleMenu()} className="show-menu">Navigation</div>
+
+        <ul id="menu" className={this.state.toggle ? 'show' : 'hide'}>
           
         
         <li><Link to ="/">Home </Link></li>
@@ -70,13 +87,7 @@ export default function Navigation() {
                 </Link>
                
             </div> */}
-
-
-
-
-
-
-
-        </div>
-    )
+            </div>
+        )
+    }
 }

@@ -4,7 +4,7 @@
     background-color: darkgray;
     font-size: 40px;
     padding: 40px;
-    height: 600px;
+    height: 200px;
 }
 
 .socialmedia {
@@ -36,6 +36,18 @@
     margin-top: 10px;
 }
 
+
+.facebook{
+    margin: 10px;
+}
+
+.twitter{
+    margin: 10px;
+}
+
+.instagram{
+   margin: 10px;
+} 
 
 
 

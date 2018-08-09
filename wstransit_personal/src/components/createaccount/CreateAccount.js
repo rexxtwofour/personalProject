@@ -75,11 +75,12 @@ loginAccount(){
                 <input onChange={this.handleChangeEmail} className="email" placeholder="email"/>
                 <input onChange={this.handleChangePassword}className="password"  placeholder="password" type="password"/>
                 <button onClick={this.registerAccount} className="registerAccount">Register</button>
+            
+            
+            
             <div className="loginSection">
-            
-            
-                <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
-                <input onChange={this.handleChangePassword}className="password"  placeholder="password" type="password"/>
+                <input onChange={this.handleChangeFullName} className="loginfullname"   placeholder="fullname"/>
+                <input onChange={this.handleChangePassword}className="loginpassword"  placeholder="password" type="password"/>
                 <button onClick={this.loginAccount} className="loginAccount">Login!</button>
             
             </div>

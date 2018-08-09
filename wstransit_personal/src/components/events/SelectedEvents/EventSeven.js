@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import './EventSeven.css';
-
-
+import jimmyg from '../../../images/jimmyg.jpg';
+import MapContainer from './Maps';
 
 
 
@@ -13,58 +13,54 @@ class EventSeven extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className="selectedevents">
+          <div>
             
-          <div className="ninersgame">
-           <img src=" picture url " alt="first event" height="42" width="42"/>
+            
+          <div className="jimmyg ">
+            <img src={ jimmyg }  alt="seventh event" />
+          </div>
+          {/* height="42" width="42" */}
+
+          <div className="eventTitle7">
+           49ers vs Rams
           </div>
 
-          <div className="eventitle">San Francisco 49ers vs Arizona Cardinals</div>
-          <div className="pickupdropoff">
-            Street:
-            City:
-            Zip:
+          <div className="rideinfo7">
+          <div className="pickupdropoff7">
+          <p>Pickup/Dropoff Location</p>
+          <p> Street: 4900 Centennial Blvd</p>
+          <p>City:Santa Clara, CA </p>
+          <p>Zip:95054</p>
           </div>
-          <div className="venue">
-            Venue: Levis Stadium Santa Clara,CA
+          
+          <div className="venue7">
+            Venue: Levi's Stadium
           </div> 
           {/* googlemap location  */}
-          <div className="datetime">
-            Saturday 11,2018
+          <div className="datetime7">
+           October 21, 2018
           </div>
 
+                      <div className="mapstyle7">
+                        <MapContainer/> 
 
-          <div className="eventinfo">
-            <p>
+
+                      </div>
+
+          <div className="ninersparagraph">
+            
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
             this  is a paragraph of text for each event the company is having.
-            </p>
+            
           </div>
             
             
-            </div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
+          </div>
 
          );
     }

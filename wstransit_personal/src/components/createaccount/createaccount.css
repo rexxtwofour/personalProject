@@ -1,3 +1,11 @@
+
+.createAccount {
+    font-size: 90px;
+    color: gold;
+    margin-top: 120px;
+}
+
+
 .accountpage {
 margin-top: 90px;
 color: gold;
@@ -20,41 +28,98 @@ padding-top: 100px;
 }
 
 
-.createAccount {
-    font-size: 90px;
-    color: gold;
-    margin-top: 120px;
-}
-
-
 .fullname{
     font-size: 20px;
     margin: 10px;
+   
+    
 }
 
 .email{
     font-size: 20px;
     margin: 10px;
+   
 }
 
 .password {
     font-size: 20px;
     margin: 10px;
+    
+    
+}
+
+
+.loginfullname{
+    font-size: 20px;
+    margin: 10px;
+   
+    
+}
+
+
+.loginpassword {
+    font-size: 20px;
+    margin: 10px;
+   
+    
 }
 
 
 
 
 
+@media(max-width:  1100px){
+   .accountpage {  
+    display: flex;
+    flex-direction: column;
+    
+  }
+    
+  .loginSection {  
+    display: flex;
+    flex-direction: column;
+    
+ }
 
+/* 
+ .fullname{
+    width:90%;
+   
+}
+
+.email{
+    width:90%;
+}
+
+.password {
+    width:90%;
+    
+} */
+
+
+
+
+} 
+
+/* 
 @media(max-width:  700px){
     .createAccount {  
       font-size: 40px;
+      margin-top: 60px;
+      
+
   }
+    
+  .accountpage {
+    margin-top: 60px;
+    height: 400px;
+    padding-top: 80px;
+    }
+
     
 
 }
-
+ */
 
 
 

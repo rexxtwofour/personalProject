@@ -25,18 +25,18 @@ class EventOne extends Component {
                     </div>
             <div className="rideinfo">
                     <div className="pickupdropoff">
-                      <p>Pickup/Dropoff Location-</p>
-                      <p>Street:</p>
-                      <p>City:</p>
-                      <p>Zip:</p>
+                      <p>Pickup/Dropoff Location</p>
+                      <p>Street:3900 W Manchester Blvd</p>
+                      <p>City:Inglewood, CA</p>
+                      <p>Zip:90305</p>
                     </div>
             <div className="venue">
-              Venue: The Forum-Inglewood,CA
+              Venue: The Forum
             </div> 
             {/* googlemap location  */}
             </div>
                   <div className="fightdatetime">
-                    Saturday 11,2018
+                    Saturday Sept 11,2018
                   </div>        
 {/* this is where the googlemap api goes */}
 
