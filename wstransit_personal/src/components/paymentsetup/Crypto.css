@@ -4,7 +4,7 @@ body {
   }
   
   div#crypto-container {
-    background:red;
+    background: goldenrod;
     width: 70%;
     margin: 0 auto 4px auto;
     padding: 1em;
@@ -19,3 +19,4 @@ body {
   span.right {
     float:right;
   }
+

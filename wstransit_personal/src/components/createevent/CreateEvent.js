@@ -32,9 +32,9 @@ class CreateEvent extends Component {
 
 
     componentDidMount(){
-        axios.get('/userdata').then(user => {
-            console.log(user)
-        })
+        // axios.get('/userdata').then(user => {
+        //     console.log(user)
+        // })
         axios.get(`/api/eventInformationInventory`).then(response => {
             console.log('componentdidmount response',response)
           this.setState({
@@ -137,17 +137,18 @@ console.log(edit)
 
 
 
-
 deleteEventInformation = (id) => {
+    console.log(id, this.state.selectedEvent)
     axios.delete(`/api/eventInformationdelete/${id}`).then(results => {
         console.log('showing if delete events', results)
+        this.setState({ eventInformationInventory: results.data});
     }).catch(error => {
         console.log(error)
     })
   }
 
      
-
+// is a componentDidMount needed in the render to constantly show all the events from the database?
 
     render() { 
         console.log(this.state.selectedEvent);
@@ -162,8 +163,12 @@ deleteEventInformation = (id) => {
                     background:'initial'
                 }
             }
+
+
+
+
             
-            return <div style={style} key={e.id}>
+            return <div style={style} key={e.id} onClick={()=>this.setState({selectedEvent: e.id})}>
                         <div className="dynamics">
                         <div className="fullnamedynamic"> {e.fullname}</div>
                         <div className="streetdynamic"> {e.street} </div>
@@ -175,6 +180,7 @@ deleteEventInformation = (id) => {
                         <div className="locationdynamic">  {e.location}</div>
                         <div className="eventcommentsdynamic">{e.eventcomments}</div>
                         <button onClick={()=>this.setState({selectedEvent: e.id})}>Edit</button>
+                        <button onClick={()=>this.deleteEventInformation(e.id)}>Delete</button>
                         </div>
                     
                         </div>
@@ -203,7 +209,8 @@ deleteEventInformation = (id) => {
             {/* added these two in, don't know if they will work correctly */}
             <button onClick={ () => this.editEventInformation()}className="editInfo">Edit</button>
 
-            <button onClick={ () => this.deleteEventInformation()}className="deleteInfo">delete</button>
+            {/* <input onChange={ e => this.handleChange( '', e.target.value)}className= "deleteEvent"placeholder="delete event by id"></input> */}
+            {/* <button onClick={ () => this.deleteEventInformation()}className="deleteInfo">delete</button> */}
 
 
 

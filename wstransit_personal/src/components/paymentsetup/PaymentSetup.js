@@ -8,13 +8,13 @@ export default class PaymentSetup extends Component {
   render() {
     return (
       <div>
+           
+           
+           
            <div className = "payment" >Payment setup</div>
             <div className="paymentlayout">
        
        
-
-
-
         <div className="billinginfo">Billing Info</div>
 
 
@@ -81,8 +81,12 @@ export default class PaymentSetup extends Component {
 
         </div>
 
-<Crypto/>
-
+            <div className="accept">We also accept Crypto Currency!</div>
+            
+            <div className="cryptostyle">
+            
+            <Crypto/>
+            </div>
 
       </div>
     )

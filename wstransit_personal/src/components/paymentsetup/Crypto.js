@@ -1,36 +1,48 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Crypto.css';
-var NumberFormat = require('react-number-format');
+// import NumberFormat from 'react-number-format';
 
 class Crypto extends Component {
     constructor() {
         super();
         this.state = { 
-            cyptos:[]
+            cryptos:''
          }
     }
 
 componentDidMount(){
     axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD&e=Coinbase&extraParams=your_app_name')
     .then(res => {
-        const cryptos = res.data;
-        console.log(cryptos);
-        this.setState({cryptos: cryptos})
+        this.setState({
+            cryptos: res.data
+        })
     })
 }
 
 
     render() { 
-        return ( 
-            <div className="App">
-            {Object.keys(this.state.cyptos).map((key)=>(
+
+        // let cryotArray = this.state.cryptos ? 
+        // let crypt = this.state.cryptos ? this.state.cryptos.map((element, index)=>{
                
-               <div id="crypto-container">
-                <span className="left">{key}</span>
-                <span className="right"><NumberFormat value={this.state.cyptos[key].USD} displayType={'text'} decimalPrecision={2} thousandSeperator={true} prefix={'$'}/></span>
-                </div>    
-        ))}
+        //     <div id="crypto-container">
+        //      <span className="left">{Object.keys(element)}</span>
+        //      <span className="right">{element[index]}</span>
+        //      </div>    
+        //  }) : 'nothing to see here'
+        console.log('===========',this.state.cryptos.BTC ? this.state.cryptos.BTC.USD : '')
+        return ( 
+
+            <div>
+           <div>
+               <div>
+                   BTC to USD: ${this.state.cryptos.BTC ? this.state.cryptos.BTC.USD : ''}
+               </div>
+               <div>
+                   ETH to USD: ${this.state.cryptos.ETH ? this.state.cryptos.ETH.USD : ''}
+               </div>
+           </div>
             </div>
          );
     }

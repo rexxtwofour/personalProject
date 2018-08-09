@@ -48,7 +48,10 @@ app.post('/login', ctrl.login)
 app.post('/api/addcreateEvent',ctrl.createEvent)
 
 app.get('/api/userEvents',ctrl.userEvents)
+
 app.get('/api/eventInformationInventory',ctrl.read)
+
+app.delete('/api/deleteEvent',ctrl.userEvents)
 
 
 
@@ -82,20 +85,11 @@ app.delete('/api/eventInformationdelete/:id', (req, res) => {
   let id = req.params.id;
   req.app.get('db').delete_event({
     id : id,
-    user_id : user_id,
-    fullname: fullname,
-    street: street,
-    city: city,
-    zip: zip,
-    phone: phone,
-    email: email,
-    datetime: datetime,
-    location: location,
-    eventcomments: eventcomments,
   }).then(eventinformation => {
-      req.json(eventinformation);
+    console.log('-------event',eventinformation)
+      res.json(eventinformation);
   }).catch(error => {
-      console.log('---error on the server')
+      console.log('---error on the server', error)
   })
 })
 
