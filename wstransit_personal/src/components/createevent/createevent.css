@@ -73,7 +73,7 @@
 }
 
 .submitEvent{
-    font-size: 20px;
+    font-size: 40px;
     background-color: gold;
 }
 
@@ -81,15 +81,15 @@
 
 
 .editInfo{
-    font-size: 20px;
+    font-size: 40px;
     background-color: gold;
 }
 
-.deleteInfo {
+/* .deleteInfo {
     font-size: 20px;
     background-color: goldenrod;
 
-}
+} */
 
 
 /* this is where well style the rendered events */
@@ -105,59 +105,139 @@
 
 @media(max-width: 1599px){
     .createEventTitle {  
-      font-size: 60px;
+      font-size: 80px;
       margin-top:120px;
   }
+
+  .createEvent {
+    margin-top: 70px;
+    background-color: darkgrey;
+    padding: 50px;
+    
+}
+
+
+.fullname{
+    width: 90%;
+}
+
+.street{
+    width: 90%;
+}
+
+.city{
+    width: 90%;
+}
+
+.zip{
+    width: 90%;
+}
+
+.phone{
+    width: 90%;
+}
+
+.email{
+    width: 90%;
+}
+.datetime{
+    font-size: 15px;
+    margin:5px;
+    width: 60%;
+
+}
+
+.location{
+    width: 90%;
+}
+
+
+.eventComments {
+    width: 60%;
+}
+
+
+.submitEvent{
+    font-size: 30px;
+    background-color: gold;
+    margin: 5px;
+}
+
+
+
+
+.editInfo{
+    font-size: 30px;
+    background-color: gold;
+    margin: 5px;
+}
+
     
 
 }
   
+
+
+
+
+
+
+
+
   @media(max-width: 950px){
     .createEventTitle {  
-        font-size: 40px;
+        font-size: 60px;
         margin-top: 40px;
     }
 
-
+/* 
     .fullname{
-        width: 200px;
+        
     }
     
     .street{
-        width: 200px;
+       
     }
     
     .city{
-        width: 200px;
+       
     }
     
     .zip{
-        width: 200px;
+       
     }
     
     .phone{
-        width: 200px;
+        
     }
     
     .email{
-        width: 200px;
-    }
+        
+    } */
     .datetime{
         font-size: 15px;
         margin:5px;
-        width: 200px;
+       
     }
    
     .location{
         width: 80%;
     }
-
+/* 
     
     .eventComments {
-        width: 200px;
+       
     }
-    
+     */
+  
+  
+  
+  
     @media(max-width : 730px){
+        .createEvent{
+            margin-top: 30px;
+        }
+        
         .fullname{
             width: 80%;
         }
@@ -201,6 +281,6 @@
 
   
   
-  } 
+    }
     
 }

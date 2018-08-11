@@ -48,7 +48,40 @@
       padding-top: 80px;
   }
 
+  .eventName {
+    width:95%;
+    
+ }
+    
+ .postTitle {
+    width:95%; 
+        
+    
+ }
+.eventReviewComments {
+    height:200px;
+    width:95%; 
 }
+
+
+.submitReview{
+    font-size: 40px;
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
 
 
   @media(max-width: 950px){
@@ -64,36 +97,26 @@
         padding: 20px;
     }
 
-    .submitReview{
-    font-size: 40px;
-    }
+    .eventName {
+        width:95%;
+        
+     }
+        
+     .postTitle {
+        width:95%; 
+            
+        
+     }
     .eventReviewComments {
         height:200px;
-        width:300px;
+        width:95%; 
     }
     
 
-  @media(max-width: 950px){
-    .eventreviews {
-        margin:2px;
-    }
-
-    .eventReviewComments {
-        height:200px;
-        width:85%;
-    }
-  
-    .eventName {
-       width:95%;
-       
-    }
-       
-    .postTitle {
-        width:95%; 
-           
-       
-    }
+    .submitReview{
+        font-size: 40px;
+    
+        }
 
 
     }
-}

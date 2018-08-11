@@ -28,21 +28,21 @@ padding-top: 100px;
 }
 
 
-.fullname{
-    font-size: 20px;
+.createfullname{
+    font-size: 30px;
     margin: 10px;
    
     
 }
 
-.email{
-    font-size: 20px;
+.createemail{
+    font-size: 30px;
     margin: 10px;
    
 }
 
 .password {
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
     
     
@@ -50,7 +50,7 @@ padding-top: 100px;
 
 
 .loginfullname{
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
    
     
@@ -58,7 +58,7 @@ padding-top: 100px;
 
 
 .loginpassword {
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
    
     
@@ -68,8 +68,14 @@ padding-top: 100px;
 
 
 
-@media(max-width:  1100px){
-   .accountpage {  
+@media(max-width:  1350px){
+    .createAccount {  
+        font-size: 70px;
+        margin-top: 80px;
+        
+  
+    }
+   /* .accountpage {  
     display: flex;
     flex-direction: column;
     
@@ -79,68 +85,78 @@ padding-top: 100px;
     display: flex;
     flex-direction: column;
     
- }
+ } */
 
-/* 
- .fullname{
+ .createfullname{
     width:90%;
    
 }
 
-.email{
+.createemail{
     width:90%;
 }
 
 .password {
     width:90%;
     
-} */
+} 
+
+
+.loginfullname{
+    width:90%;    
+}
+
+
+.loginpassword {
+    width:90%;    
+}
+
+
+
+
 
 
 
 
 } 
 
-/* 
 @media(max-width:  700px){
     .createAccount {  
-      font-size: 40px;
+      font-size: 50px;
       margin-top: 60px;
       
 
   }
     
   .accountpage {
-    margin-top: 60px;
+    margin-top: 40px;
     height: 400px;
-    padding-top: 80px;
+    padding-top: 40px;
     }
 
-    
+  
+      .createfullname {
+          font-size: 20px;
+      }
+      .createemail {
+          font-size: 20px;
+      }
+      .password{
+          font-size: 20px;
+      }
+  
+            
+        .loginfullname{
+            font-size: 20px;
+        }
+
+
+        .loginpassword {
+            font-size: 20px; 
+
+        }
+ 
 
 }
- */
 
 
-
-
-
-
-/*   
-  @media(max-width: 700px){
-    .createAccount {
-      font-size: 50px;
-    }
-    .fullname {
-        font-size: 10px;
-    }
-    .email {
-        font-size: 10px;
-    }
-    .password{
-        font-size: 10px;
-    }
-
-    
-}
- */

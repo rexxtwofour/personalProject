@@ -71,7 +71,7 @@ ul li a:hover + .hidden, .hidden:hover {
   text-align: center;
   padding: 10px 0;
   display: none;
-  min-width: 90% ;
+  min-width: 80vw ;
 }
 
 input[type=checkbox]{
@@ -119,6 +119,7 @@ input[type=checkbox]:checked ~ #menu{
     opacity: 1;
     position: relative;
     z-index: 1;
+  
   }
 
   .hide {
@@ -137,9 +138,13 @@ input[type=checkbox]:checked ~ #menu{
 
 @media(max-width : 950px){
     .navbutton{
-      min-width: 30vw ;
+      min-width: 80vw ;
     }
-  
+    .show-menu {
+      min-width: 80vw ;
+
+    }
+
     
 
     }
@@ -150,7 +155,7 @@ input[type=checkbox]:checked ~ #menu{
         min-width: 18vw ;
       }
       .show-menu {
-        min-width: 30vw ;
+        min-width: 50vw ;
 
       }
 

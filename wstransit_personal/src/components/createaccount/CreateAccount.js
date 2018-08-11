@@ -71,8 +71,8 @@ loginAccount(){
             <div className="createAccount">Create Account</div>   
 
             <div className="accountpage">
-                <input onChange={this.handleChangeFullName} className="fullname"   placeholder="fullname"/>
-                <input onChange={this.handleChangeEmail} className="email" placeholder="email"/>
+                <input onChange={this.handleChangeFullName} className="createfullname"   placeholder="fullname"/>
+                <input onChange={this.handleChangeEmail} className="createemail" placeholder="email"/>
                 <input onChange={this.handleChangePassword}className="password"  placeholder="password" type="password"/>
                 <button onClick={this.registerAccount} className="registerAccount">Register</button>
             

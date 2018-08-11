@@ -11,72 +11,39 @@ export default class PaymentSetup extends Component {
            
            
            
-           <div className = "payment" >Payment setup</div>
+           <div className = "payment" >Payment Setup</div>
             <div className="paymentlayout">
        
        
         <div className="billinginfo">Billing Info</div>
-
-
-
         
-        <div className="fullname">
-        Full Name
-        <input type="text"/>
-        </div>
-        
+        <input  className="paymentfullname"placeholder="Full Name"type="text"/>
       
-        <div className="address">
-        Address
-        <input type="text"/>
-        </div>
-
+        <input  className="paymentaddress"placeholder="Address"type="text"/>
+      
+        <input  className="paymentcity"placeholder=" City"type="text"/>
+      
+        <input  className="paymentzip"placeholder="Zip"type="text"/>
+      
+        <input  className="paymentcountry"placeholder="  Country"type="text"/>
        
-        <div className="city">
-        City
-        <input type="text"/>
-        </div>
-
-        
-        <div className="zip">
-        Zip
-        <input type="text"/>
-        </div>
-
-        
-        <div className="country">
-        Country
-        <input type="text"/>
-        </div>
 
       
         <div className="creditcardinfo">Credit Card Info</div>
        
         
         
-        <div className="creditcardnumber">
-        Credit Card
-        <input type="text"/>
-        </div>
 
 
-        
-        <div className="cvvnumber">
-        Cvv number
-        <input type="text"/>
-        </div>
+<input  className="creditcardnumber"placeholder="Credit Card"type="text"/>
 
-        
-        <div className="cardholdername">
-        Card Holder Name
-        <input type="text"/>
-        </div>
+<input  className="cvvnumber"placeholder="Cvv number"type="text"/>
 
-       
-        <div className="expirationdate">
-        Expriration Date
-        <input type="text"/>
-        </div>
+<input  className="cardholdername"placeholder="Card Holder Name"type="text"/>
+
+<input  className="expirationdate"placeholder="Expriration Date"type="text"/>
+
+
 
 
         </div>
