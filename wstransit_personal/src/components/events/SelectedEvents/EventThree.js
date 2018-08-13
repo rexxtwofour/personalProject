@@ -49,12 +49,8 @@ class EventThree extends Component {
 
           <div className="kingsparagraph">
             
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
+            Were headed to Staples Center to watch the Kings destroy the Sharks.
+            This is one of the best rivalries in the NHL so don't miss it!
             
           </div>
             

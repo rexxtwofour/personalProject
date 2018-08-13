@@ -49,12 +49,8 @@ class EventEight extends Component {
 
           <div className="raidersparagraph">
             
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
+            Black and Silver. Take a ride and party for the last few seasons left in Oakland before the 
+            Raiders make their way to Las Vegas. Family and Die hards welcome!
             
           </div>
             

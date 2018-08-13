@@ -52,6 +52,15 @@ create table userEvents (
 // then try to add the events to the table
 
 
+
+SELECT * FROM users
+JOIN userEvents 
+ON userEvents.user_id = users.id 
+WHERE users.id = ${userId}
+
+
+
+
 //create users data
 
 insert into users ( fullname, email, password )

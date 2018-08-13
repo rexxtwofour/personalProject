@@ -49,12 +49,8 @@ class EventSix extends Component {
 
           <div className="dodgersparagraph">
             
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
+            It's time for Dodger Baseball!!! We're heading to Blue Heaven 
+            aka Dodger stadium ready for full Hollywood type date. Bring your hats and shades!
             
           </div>
             

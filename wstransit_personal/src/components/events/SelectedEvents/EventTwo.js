@@ -49,12 +49,7 @@ class EventTwo extends Component {
 
           <div className="edcparagraph">
             
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
+            Join us as go to the biggest party in the US in the craziest city!! Las Vegas!!
             
           </div>
             

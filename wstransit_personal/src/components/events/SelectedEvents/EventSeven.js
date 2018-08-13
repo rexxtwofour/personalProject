@@ -49,12 +49,8 @@ class EventSeven extends Component {
 
           <div className="ninersparagraph">
             
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
+            Jimmy G and the boys are back and you have to be apart of the ride. All 49er faithful and family 
+            welcome as we go to one of newest and stadiums in the NFL!
             
           </div>
             

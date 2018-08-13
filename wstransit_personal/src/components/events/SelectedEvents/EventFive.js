@@ -49,13 +49,8 @@ class EventFive extends Component {
 
           <div className="ramsparagraph">
             
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            
+            Off to the Coliseum we go as the retooled Rams get ready for another season!.
+            The playoff excitement is back in the so come along for the ride!
           </div>
             
             

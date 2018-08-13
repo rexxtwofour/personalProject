@@ -49,12 +49,7 @@ class EventOne extends Component {
 
                <div className="bellatorparagraph">
                 
-                       This  is a paragraph of text for each event the company is having.
-                       This  is a paragraph of text for each event the company is having.
-                       This  is a paragraph of text for each event the company is having.
-                       This  is a paragraph of text for each event the company is having.
-                       This  is a paragraph of text for each event the company is having.
-                       This  is a paragraph of text for each event the company is having.
+                       Be there as we support and watch Joey Davis beat up a guy to a bloody pulp!!
                 
                </div>
              

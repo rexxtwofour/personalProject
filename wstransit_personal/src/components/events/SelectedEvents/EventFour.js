@@ -49,12 +49,8 @@ class EventFour extends Component {
 
           <div className="lakersparagraph">
             
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
-            this  is a paragraph of text for each event the company is having.
+            Lebron James and the new look Lakers take on the defending back to back champion Warriors.
+            Showtime is back!!!
             
           </div>
             
